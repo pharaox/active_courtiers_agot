@@ -1,0 +1,20 @@
+﻿can_be_personal_steward_trigger = {
+	has_trait = nightswatch
+	exists = $COURT_OWNER$
+}
+
+can_be_castellan_trigger = {
+	can_be_steward_trigger = { COURT_OWNER = $COURT_OWNER$ }
+}
+
+accou_can_appoint_personal_steward_trigger = {
+	always = yes
+}
+
+accou_can_appoint_admiral_trigger = {
+	always = yes
+}
+
+accou_can_appoint_castellan_trigger = {
+	always = yes
+}

@@ -1,0 +1,83 @@
+﻿accou_maester_candidate_score_value = {
+	value = 150
+}
+
+accou_household_guard_candidate_score_value = {
+	value = 100
+}
+
+accou_septon_candidate_score_value = {
+	value = 50
+
+	# Zealous AI's like this
+	if = {
+		limit = {
+			ai_zeal > 75
+		}
+		add = 50
+	}
+}
+
+accou_septa_candidate_score_value = {
+	value = 50
+
+	# Zealous AI's like this
+	if = {
+		limit = {
+			ai_zeal > 75
+		}
+		add = 50
+	}
+}
+
+accou_gaoler_candidate_score_value = {
+	value = 50
+
+	# More likely to hire one if you have high dread
+	if = {
+		limit = {
+			dread > medium_dread
+		}
+		add = 25
+	}
+
+	# More likely if you have dread-traits
+	if = {
+		limit = {
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = arbitrary
+			}
+		}
+		add = 25
+	}
+}
+
+accou_harbormaster_candidate_score_value = {
+	value = 0
+}
+
+accou_master_at_arms_candidate_score_value = {
+	value = 25
+}
+
+accou_court_smith_candidate_score_value = {
+	value = 50
+	if = {
+		limit = {
+			scope:liege = {
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+		add = 50
+	}
+	if = {
+		limit = {
+			scope:liege = {
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		add = 50
+	}
+}

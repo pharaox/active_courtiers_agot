@@ -1,0 +1,394 @@
+﻿accou_better_councillor_skill_modifier = {
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = chancellor
+		SKILL = diplomacy
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = steward
+		SKILL = stewardship
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = marshal
+		SKILL = martial
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = spymaster
+		SKILL = intrigue
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = court_chaplain
+		SKILL = learning
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	# AGOT
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = personal_steward
+		SKILL = average_of_all_skills
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = admiral
+		SKILL = martial
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = castellan
+		SKILL = average_of_all_skills
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = kingsguard
+		SKILL = prowess
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+}
+
+accou_better_court_position_aptitude_modifier = {
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_physician_court_position
+		NAME = court_physician
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = cultural_emissary_court_position
+		NAME = cultural_emissary
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = keeper_of_swans_court_position
+		NAME = keeper_of_swans
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_gardener_court_position
+		NAME = court_gardener
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = lady_in_waiting_court_position
+		NAME = lady_in_waiting
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = antiquarian_court_position
+		NAME = antiquarian
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = travel_leader_court_position
+		NAME = travel_leader
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = wet_nurse_court_position
+		NAME = wet_nurse
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_tutor_court_position
+		NAME = court_tutor
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = food_taster_court_position
+		NAME = food_taster
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = master_of_horse_court_position
+		NAME = master_of_horse
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = master_of_hunt_court_position
+		NAME = master_of_hunt
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = royal_architect_court_position
+		NAME = royal_architect
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = seneschal_court_position
+		NAME = seneschal
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = cupbearer_court_position
+		NAME = cupbearer
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = chief_eunuch_court_position
+		NAME = chief_eunuch
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_jester_court_position
+		NAME = court_jester
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_poet_court_position
+		NAME = court_poet
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_musician_court_position
+		NAME = court_musician
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = bodyguard_court_position
+		NAME = bodyguard
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = champion_court_position
+		NAME = champion
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = executioner_court_position
+		NAME = executioner
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_artificer_court_position
+		NAME = court_artificer
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_cave_hermit_position
+		NAME = court_cave_hermit
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = master_assassin_court_position
+		NAME = master_assassin
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_scholar_court_position
+		NAME = court_scholar
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	# AGOT
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = maester_court_position
+		NAME = maester
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = household_guard_court_position
+		NAME = household_guard
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = septon_court_position
+		NAME = septon
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = septa_court_position
+		NAME = septa
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = gaoler_court_position
+		NAME = gaoler
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = harbormaster_court_position
+		NAME = harbormaster
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = master_at_arms_court_position
+		NAME = master_at_arms
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_smith_court_position
+		NAME = court_smith
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+}

@@ -1,0 +1,8 @@
+﻿accou_can_appoint_court_chaplain_trigger = {
+	OR = {
+		has_government = nights_watch_government
+		faith = {
+			has_doctrine_parameter = clerical_appointment_ruler
+		}
+	}
+}

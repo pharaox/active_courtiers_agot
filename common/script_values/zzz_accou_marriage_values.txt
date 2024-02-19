@@ -1,0 +1,9 @@
+﻿# Not used with AGOT
+accou_quick_marriage_ai_accept_modifier_actor_value = {
+	value = 0
+}
+
+# Not used with AGOT
+accou_quick_marriage_ai_accept_modifier_value = {
+	value = 0
+}

@@ -1,0 +1,46 @@
+﻿accou_can_be_maester_trigger = {
+	is_capable_adult = yes
+	exists = $LIEGE$
+	has_trait = maester
+}
+
+accou_can_be_household_guard_trigger = {
+	is_capable_adult = yes
+	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
+}
+
+accou_can_be_septon_trigger = {
+	is_capable_adult = yes
+	exists = $LIEGE$
+	has_trait = septon
+	is_male = yes
+}
+
+accou_can_be_septa_trigger = {
+	is_capable_adult = yes
+	exists = $LIEGE$
+	has_trait = septon
+	is_male = no
+}
+
+accou_can_be_gaoler_trigger = {
+	is_capable_adult = yes
+	NOT = { is_spouse_of = $LIEGE$ }
+	is_ruler = no
+}
+
+accou_can_be_harbormaster_trigger = {
+	is_capable_adult = yes
+	NOT = { is_spouse_of = $LIEGE$ }
+}
+
+accou_can_be_master_at_arms_trigger = {
+	is_capable_adult = yes
+	exists = $LIEGE$
+}
+
+accou_can_be_court_smith_trigger = {
+	is_capable_adult = yes
+	NOT = { is_spouse_of = $LIEGE$ }
+}
+
