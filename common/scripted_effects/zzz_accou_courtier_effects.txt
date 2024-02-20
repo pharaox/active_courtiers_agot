@@ -33,10 +33,12 @@
 		limit = { accou_can_be_better_castellan_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:castellan }
 	}
-	if = {
-		limit = { accou_can_be_better_kingsguard_trigger = { LIEGE = $LIEGE$ } }
-		add_to_variable_list = { name = $OPTIONS$ target = flag:kingsguard }
-	}
+	# TODO Kingsguard can't be attracted via marriage, since married characters are not eligible for kingsguard
+	# Enable this when this effect is used in other events than marriage
+	#if = {
+	#	limit = { accou_can_be_better_kingsguard_trigger = { LIEGE = $LIEGE$ } }
+	#	add_to_variable_list = { name = $OPTIONS$ target = flag:kingsguard }
+	#}
 }
 
 accou_get_better_court_position_options_effect = {

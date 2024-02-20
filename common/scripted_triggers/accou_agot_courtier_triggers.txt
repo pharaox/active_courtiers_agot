@@ -33,7 +33,6 @@ accou_can_be_better_kingsguard_trigger = {
 		can_have_kingsguard = yes
 		trigger_if = {
 			limit = {
-				exists = cp:kingsguard_lord_commander
 				exists = cp:kingsguard_1
 				exists = cp:kingsguard_2
 				exists = cp:kingsguard_3
@@ -42,7 +41,6 @@ accou_can_be_better_kingsguard_trigger = {
 				exists = cp:kingsguard_6
 			}
 			OR = {
-				cp:kingsguard_lord_commander.prowess < scope:character.prowess
 				cp:kingsguard_1.prowess < scope:character.prowess
 				cp:kingsguard_2.prowess < scope:character.prowess
 				cp:kingsguard_3.prowess < scope:character.prowess
@@ -168,7 +166,6 @@ accou_can_apply_for_kingsguard_trigger = {
 		can_have_kingsguard = yes
 		trigger_if = {
 			limit = {
-				exists = cp:kingsguard_lord_commander
 				exists = cp:kingsguard_1
 				exists = cp:kingsguard_2
 				exists = cp:kingsguard_3
@@ -177,10 +174,6 @@ accou_can_apply_for_kingsguard_trigger = {
 				exists = cp:kingsguard_6
 			}
 			OR = {
-				cp:kingsguard_lord_commander = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
 				cp:kingsguard_1 = {
 					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
 					prowess < scope:character.prowess

@@ -1,7 +1,4 @@
 ﻿accou_get_kingsguard_members_effect = {
-	cp:kingsguard_lord_commander ?= {
-		add_to_temporary_list = $MEMBERS$
-	}
 	cp:kingsguard_1 ?= {
 		add_to_temporary_list = $MEMBERS$
 	}
@@ -29,7 +26,7 @@ accou_get_min_prowess_kingsguard_member_effect = {
 		limit = {
 			any_in_list = {
 				list = kingsguard_members
-				count >= 7
+				count >= 6
 			}
 		}
 		ordered_in_list = {
@@ -70,9 +67,5 @@ accou_assign_kingsguard_effect = {
 	else_if = {
 		limit = { NOT = { exists = cp:kingsguard_6 } }
 		assign_councillor_type = { type = kingsguard_6 target = $TARGET$ }
-	}
-	else_if = {
-		limit = { NOT = { exists = cp:kingsguard_lord_commander } }
-		assign_councillor_type = { type = kingsguard_lord_commander target = $TARGET$ }
 	}
 }
