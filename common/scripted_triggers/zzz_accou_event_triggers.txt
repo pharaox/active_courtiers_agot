@@ -1,3 +1,0 @@
-﻿accou_is_marriage_ai_acceptance_check_original_trigger = {
-	always = yes
-}

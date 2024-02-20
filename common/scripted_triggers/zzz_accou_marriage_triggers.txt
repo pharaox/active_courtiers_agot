@@ -1,0 +1,61 @@
+﻿accou_is_valid_marriage_target_trigger = {
+	accou_is_valid_marriage_target_vanilla_trigger = {
+		CHARACTER = $CHARACTER$
+		ACTOR = $ACTOR$
+		RECIPIENT = $RECIPIENT$
+	}
+	accou_is_valid_marriage_target_agot_trigger = {
+		CHARACTER = $CHARACTER$
+		ACTOR = $ACTOR$
+	}
+}
+
+accou_is_valid_marriage_target_agot_trigger = {
+	#AGOT Added, prevent AI lowborn and bastard marriages
+	trigger_if = {
+		limit = {
+			$ACTOR$ = { is_ai = yes }
+			OR = {
+				accou_is_lowborn_or_bastard_trigger = yes
+				$CHARACTER$ = {
+					accou_is_lowborn_or_bastard_trigger = yes
+				}
+			}
+		}
+		accou_is_lowborn_or_bastard_trigger = yes
+		$CHARACTER$ = {
+			accou_is_lowborn_or_bastard_trigger = yes
+		}
+	}
+}
+
+accou_is_valid_marriage_recipient_trigger = {
+	accou_is_valid_marriage_recipient_vanilla_trigger = { ACTOR = $ACTOR$ }
+	accou_is_valid_marriage_recipient_agot_trigger = { ACTOR = $ACTOR$ }
+}
+
+accou_is_valid_marriage_recipient_agot_trigger = {
+	#AGOT Added, no non-human interactions
+	#AGOT Added, no NW marriages
+	is_human = yes
+	NOT = { has_trait = nightswatch }
+	$ACTOR$ = {
+		is_human = yes
+		NOT = { has_trait = nightswatch }
+	}
+}
+
+accou_is_lowborn_or_bastard_trigger = {
+	OR = {
+		is_lowborn = yes
+		has_trait = bastard
+		AND = {
+			has_trait = bastard_founder
+			is_landed = no
+		}
+	}
+}
+
+accou_is_marriage_ai_acceptance_check_original_trigger = {
+	always = yes
+}
