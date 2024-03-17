@@ -147,6 +147,10 @@ accou_get_better_court_position_options_effect = {
 		limit = { accou_can_be_better_court_scholar_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:court_scholar }
 	}
+	if = {
+		limit = { accou_can_be_better_chronicler_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:chronicler }
+	}
 	# AGOT
 	if = {
 		limit = { accou_can_be_better_maester_trigger = { LIEGE = $LIEGE$ } }
@@ -367,6 +371,9 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:court_scholar = {
 			court_position:court_scholar_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:chronicler = {
+			court_position:chronicler_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		# AGOT
 		flag:maester = {
 			court_position:maester_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -551,6 +558,12 @@ accou_appoint_court_position_effect = {
 		flag:court_scholar = {
 			appoint_court_position = {
 				court_position = court_scholar_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:chronicler = {
+			appoint_court_position = {
+				court_position = chronicler_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -762,6 +775,12 @@ accou_revoke_court_position_effect = {
 		flag:court_scholar = {
 			revoke_court_position = {
 				court_position = court_scholar_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:chronicler = {
+			revoke_court_position = {
+				court_position = chronicler_court_position
 				recipient = $RECIPIENT$
 			}
 		}

@@ -318,6 +318,15 @@ accou_better_court_position_aptitude_modifier = {
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = chronicler_court_position
+		NAME = chronicler
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
 	# AGOT
 	accou_better_court_position_aptitude_internal_modifier = {
 		CHARACTER = $CHARACTER$

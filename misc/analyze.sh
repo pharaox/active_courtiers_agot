@@ -60,6 +60,7 @@ echo "- court_artificer: $(grep -a "accou_courtier.0003 event option a, .*, posi
 echo "- court_cave_hermit: $(grep -a "accou_courtier.0003 event option a, .*, position: court_cave_hermit" debug.log | wc -l)"
 echo "- master_assassin: $(grep -a "accou_courtier.0003 event option a, .*, position: master_assassin" debug.log | wc -l)"
 echo "- court_scholar: $(grep -a "accou_courtier.0003 event option a, .*, position: court_scholar" debug.log | wc -l)"
+echo "- chronicler: $(grep -a "accou_courtier.0003 event option a, .*, position: chronicler" debug.log | wc -l)"
 echo "- maester: $(grep -a "accou_courtier.0003 event option a, .*, position: maester" debug.log | wc -l)"
 echo "- household_guard: $(grep -a "accou_courtier.0003 event option a, .*, position: household_guard" debug.log | wc -l)"
 echo "- septon: $(grep -a "accou_courtier.0003 event option a, .*, position: septon" debug.log | wc -l)"
