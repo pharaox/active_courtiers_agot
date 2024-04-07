@@ -36,12 +36,13 @@ accou_is_valid_marriage_recipient_trigger = {
 
 accou_is_valid_marriage_recipient_agot_trigger = {
 	#AGOT Added, no non-human interactions
-	#AGOT Added, no NW marriages
+	$ACTOR$ = { is_human = yes }
 	is_human = yes
-	NOT = { has_trait = nightswatch }
-	$ACTOR$ = {
-		is_human = yes
-		NOT = { has_trait = nightswatch }
+
+	#AGOT Added, no NW marriages
+	NOR = {
+		$ACTOR$ = { has_trait = nightswatch }
+		has_trait = nightswatch
 	}
 }
 

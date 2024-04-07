@@ -1,0 +1,40 @@
+﻿accou_is_valid_invite_recipient_trigger = {
+	accou_is_valid_invite_recipient_vanilla_trigger = { ACTOR = $ACTOR$ }
+	accou_is_valid_invite_recipient_agot_trigger = { ACTOR = $ACTOR$ }
+}
+
+accou_is_valid_invite_recipient_agot_trigger = {
+	## AGOT Added, either both have to be wildlings, or neither can be
+	NOR = {
+		# Actor is not wildling, but recip is
+		AND = {
+			$ACTOR$.culture = { agot_is_wildling_culture = no }
+			culture = { agot_is_wildling_culture = yes }
+		}
+		# Actor is wildling, but recip is not
+		AND = {
+			$ACTOR$.culture = { agot_is_wildling_culture = yes }
+			culture = { agot_is_wildling_culture = no }
+		}
+	}
+
+	#AGOT Added, NW can't recruit this way
+	NOR = {
+		$ACTOR$ = { has_trait = nightswatch }
+		has_trait = nightswatch
+	}
+
+	#AGOT Added, KG can't leave their post
+	NOT = {
+		has_trait = kingsguard
+	}
+
+	#AGOT Added, Silent Sisters can't leave the sisterhood
+	NOT = {
+		has_trait = silent_sister
+	}
+
+	#AGOT Added, no non-human interactions
+	$ACTOR$ = { is_human = yes }
+	is_human = yes
+}
