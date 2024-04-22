@@ -30,6 +30,20 @@ echo "accou_invite.0002 event option b: $(grep -a "accou_invite.0002 event optio
 pcre2grep -a -o1 "accou_invite.0002 event .* candidate quality: ([\d]+)" debug.log | awk '{s+=$1}END{print "average invite candidate quality:",s/NR}' RS="\n"
 echo
 
+# Guardian events
+echo "accou_guardian.0001 event option a: $(grep -a "accou_guardian.0001 event option a" debug.log | wc -l)"
+echo "- success: $(grep -a "accou_guardian.0001 event option a success" debug.log | wc -l)"
+echo "- failure: $(grep -a "accou_guardian.0001 event option a failure" debug.log | wc -l)"
+#echo "  - no candidate: $(pcre2grep -a "accou_guardian.0001 event option a failure, child: .+ \([\d]+\), candidate:  \(4294967295\)" debug.log | wc -l)"
+#echo "  - no courtier: $(pcre2grep -a "accou_guardian.0001 event option a failure, child: .+ \([\d]+\), candidate: .+ \([\d]+\), courtier:  \(4294967295\)" debug.log | wc -l)"
+echo "- failure fp: $(pcre2grep -a "accou_guardian.0001 event option a failure, child: .+ \([\d]+\), candidate: .+ \([\d]+\), courtier: .+ \([\d]+\)" debug.log | wc -l)"
+echo
+echo "accou_guardian.0002 event option a: $(grep -a "accou_guardian.0002 event option a" debug.log | wc -l)"
+echo "- education focus: $(grep -a "accou_guardian.0002 event option a, .*, education focus: .* Education" debug.log | wc -l)"
+echo "accou_guardian.0002 event option b: $(grep -a "accou_guardian.0002 event option b" debug.log | wc -l)"
+pcre2grep -a -o1 "accou_guardian.0002 event .* candidate quality: ([\d]+)" debug.log | awk '{s+=$1}END{print "average guardian candidate quality:",s/NR}' RS="\n"
+echo
+
 # Courtier events
 echo "accou_courtier.0001 event option a: $(grep -a "accou_courtier.0001 event option a" debug.log | wc -l)"
 echo "- success: $(grep -a "accou_courtier.0001 event option a success" debug.log | wc -l)"

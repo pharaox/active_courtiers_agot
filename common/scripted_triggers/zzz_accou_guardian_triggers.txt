@@ -1,0 +1,48 @@
+﻿# Is this character a valid guardian recipient
+# See educate_child_interaction (is_shown, is_valid_showing_failures_only, can_be_picked)
+accou_is_valid_guardian_recipient_trigger = {
+	accou_is_valid_guardian_recipient_vanilla_trigger = { ACTOR = $ACTOR$ }
+	accou_is_valid_guardian_recipient_agot_trigger = { ACTOR = $ACTOR$ }
+}
+
+accou_is_valid_guardian_recipient_agot_trigger = {
+	#AGOT Added, no non-human interactions
+	$ACTOR$ = { is_human = yes }
+	is_human = yes
+}
+
+# Is this character a valid child recipient
+# See educate_child_interaction (is_shown, is_valid_showing_failures_only, can_be_picked)
+accou_is_valid_child_recipient_trigger = {
+	accou_is_valid_child_recipient_vanilla_trigger = { ACTOR = $ACTOR$ }
+	accou_is_valid_child_recipient_agot_trigger = { ACTOR = $ACTOR$ }
+}
+
+accou_is_valid_child_recipient_agot_trigger = {
+	#AGOT Added, no non-human interactions
+	$ACTOR$ = { is_human = yes }
+	is_human = yes
+
+	#AGOT Added so canon children with canon guardians can only get guardians through players
+	trigger_if = {
+		limit = {
+			$ACTOR$ = { is_ai = yes }
+			has_variable = canon_guardian
+		}
+		save_temporary_scope_as = child_recipient
+		NOT = {
+			var:canon_guardian = {
+				agot_canon_children_can_become_guardian = {
+					WARD = scope:child_recipient
+					WARD_LIEGE = $ACTOR$
+					GUARDIAN_LIEGE = $ACTOR$
+				}
+			}
+		}
+	}
+}
+
+accou_is_innovation_knighthood_better_guardians_trigger = {
+	#AGOT Disabled innovation_knighthood doesn't affect education
+	always = no
+}
