@@ -1,6 +1,6 @@
 This is an [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3157170996]Active Courtiers[/url] compatibility patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2962333032]A Game of Thrones[/url]. For an overview of features and other changes, see the [url=https://github.com/pharaox/active_courtiers/blob/main/README.md]Active Courtiers README[/url].
 
-The latest version is compatible with CK3 1.12.x, Active Courtiers 0.4.x, and AGOT 0.2.x.
+The latest version is compatible with CK3 1.12.x, Active Courtiers 0.5.x, and AGOT 0.2.x.
 
 Load order:
 [list]
@@ -20,7 +20,7 @@ Active Courtiers is already largely compatible with most mods due to its design,
     [*] [b]Kingsguard[/b], since once married they would no longer be eligible.
     [*] [b]Maester[/b], [b]Septon[/b], and [b]Septa[/b], since eligible courtiers have traits that prevent them from marrying.
   [/list]
-  [*] Ensures that changes to marriage and invite to court interactions by AGOT are properly taken into account when evaluating candidates. For example, in AGOT lowborn or bastards cannot intermarry with highborn.
+  [*] Ensures that changes to marriage, invite to court, and education interactions by AGOT are properly taken into account when evaluating candidates. For example, in AGOT lowborn or bastards cannot intermarry with highborn.
   [*] Ensures that the marriage acceptance check by AI is always using the original modifier so that changes by AGOT are properly taken into account, even if the game rule [b]Interaction Acceptance by AI[/b] is set to [b]Quick[/b].
 [/list]
 

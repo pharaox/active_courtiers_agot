@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.4.0
+
+* Adapted to Active Courtiers 0.5.x.
+
 ## Version 0.3.0
 
 * Adapted to Active Courtiers 0.4.x.
