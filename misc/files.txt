@@ -1,0 +1,8 @@
+common/character_interactions/00_courtier_and_guest_interactions.txt
+common/character_interactions/00_education_interactions.txt
+common/character_interactions/00_marriage_interactions.txt
+common/council_positions/00_agot_council_positions.txt
+common/council_positions/00_council_kingsguard.txt
+common/council_positions/00_council_positions.txt
+common/court_positions/types/00_agot_court_positions.txt
+common/court_positions/types/00_court_positions.txt
