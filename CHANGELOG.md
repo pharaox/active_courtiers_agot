@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.4.1
+
+* Adapted to AGOT 0.2.7 (for CK3 1.12.5).
+
 ## Version 0.4.0
 
 * Adapted to Active Courtiers 0.5.x.

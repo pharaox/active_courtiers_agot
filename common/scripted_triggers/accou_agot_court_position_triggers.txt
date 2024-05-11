@@ -1,7 +1,21 @@
 ﻿accou_can_be_maester_trigger = {
 	is_capable_adult = yes
-	exists = $LIEGE$
-	has_trait = maester
+	OR = {
+		has_trait_xp = {
+			trait = maester
+			value = 100
+		}
+		has_trait = disgraced_maester
+		has_character_flag = former_acolyte
+	}
+	trigger_if = {
+		limit = {
+			$LIEGE$ = {
+				primary_title = title:e_the_iron_throne
+			}
+		}
+		has_inactive_trait = grandmaester
+	}
 }
 
 accou_can_be_household_guard_trigger = {

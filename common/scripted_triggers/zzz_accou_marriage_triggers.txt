@@ -44,6 +44,15 @@ accou_is_valid_marriage_recipient_agot_trigger = {
 		$ACTOR$ = { has_trait = nightswatch }
 		has_trait = nightswatch
 	}
+
+	#AGOT Added, banned marriage with artifact keeper
+	trigger_if = {
+		limit = { exists = global_var:agot_artifact_keeper }
+		NOR = {
+			$ACTOR$ = global_var:agot_artifact_keeper
+			this = global_var:agot_artifact_keeper
+		}
+	}
 }
 
 accou_is_lowborn_or_bastard_trigger = {
