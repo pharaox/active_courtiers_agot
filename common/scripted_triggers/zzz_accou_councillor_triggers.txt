@@ -1,6 +1,11 @@
 ﻿accou_can_appoint_court_chaplain_trigger = {
 	# valid_position
-	NOT = { has_government = nights_watch_government }
+	NOR = {
+		has_government = nights_watch_government
+		any_liege_or_above = {
+			has_government = nights_watch_government
+		}
+	}
 
 	# can_fire / can_reassign
 	faith = {

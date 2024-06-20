@@ -14,7 +14,8 @@ accou_is_valid_marriage_target_agot_trigger = {
 	#AGOT Added, prevent AI lowborn and bastard marriages
 	trigger_if = {
 		limit = {
-			$ACTOR$ = { is_ai = yes }
+			exists = $ACTOR$
+			#$ACTOR$ = { is_ai = yes }
 			OR = {
 				accou_is_lowborn_or_bastard_trigger = yes
 				$CHARACTER$ = {
