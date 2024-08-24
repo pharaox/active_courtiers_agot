@@ -129,6 +129,14 @@ accou_can_be_better_court_smith_trigger = {
 	}
 }
 
+accou_can_be_better_head_dragonkeeper_trigger = {
+	accou_can_be_better_court_position_trigger = {
+		TYPE = head_dragonkeeper_court_position
+		NAME = head_dragonkeeper
+		LIEGE = $LIEGE$
+	}
+}
+
 accou_can_apply_for_personal_steward_trigger = {
 	accou_can_apply_for_councillor_trigger = {
 		TYPE = councillor_personal_steward
@@ -255,6 +263,13 @@ accou_can_apply_for_master_at_arms_trigger = {
 accou_can_apply_for_court_smith_trigger = {
 	accou_can_apply_for_court_position_trigger = {
 		TYPE = court_smith_court_position
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_apply_for_head_dragonkeeper_trigger = {
+	accou_can_apply_for_court_position_trigger = {
+		TYPE = head_dragonkeeper_court_position
 		LIEGE = $LIEGE$
 	}
 }

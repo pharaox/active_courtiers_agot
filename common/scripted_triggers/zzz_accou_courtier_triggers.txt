@@ -141,5 +141,8 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:court_smith = {
 			accou_can_apply_for_court_smith_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:head_dragonkeeper = {
+			accou_can_apply_for_head_dragonkeeper_trigger = { LIEGE = $LIEGE$ }
+		}
 	}
 }

@@ -100,6 +100,7 @@ echo "- gaoler: $(grep -a "accou_courtier.0003 event option a, .*, position: gao
 echo "- harbormaster: $(grep -a "accou_courtier.0003 event option a, .*, position: harbormaster" debug.log | wc -l)"
 echo "- master_at_arms: $(grep -a "accou_courtier.0003 event option a, .*, position: master_at_arms" debug.log | wc -l)"
 echo "- court_smith: $(grep -a "accou_courtier.0003 event option a, .*, position: court_smith" debug.log | wc -l)"
+echo "- head_dragonkeeper: $(grep -a "accou_courtier.0003 event option a, .*, position: head_dragonkeeper" debug.log | wc -l)"
 echo "---"
 echo "accou_courtier.0003 event option b: $(grep -a "accou_courtier.0003 event option b" debug.log | wc -l)"
 echo

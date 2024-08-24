@@ -81,3 +81,7 @@ accou_court_smith_candidate_score_value = {
 		add = 50
 	}
 }
+
+accou_head_dragonkeeper_candidate_score_value = {
+	value = 150
+}

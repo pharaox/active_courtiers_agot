@@ -18,9 +18,7 @@ accou_can_appoint_personal_steward_trigger = {
 accou_can_appoint_admiral_trigger = {
 	# valid_position
 	any_sub_realm_county = {
-		any_county_province = {
-			is_coastal = yes
-		}
+		is_coastal_county = yes
 	}
 }
 

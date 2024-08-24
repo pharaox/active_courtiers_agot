@@ -400,4 +400,13 @@ accou_better_court_position_aptitude_modifier = {
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = head_dragonkeeper_court_position
+		NAME = head_dragonkeeper
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
 }
