@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.5.1
+
+### Bug Fixes
+
+* Dragons may no longer recommend courtiers to invite or guardians for children.
+
 ## Version 0.5.0
 
 * Adapted to AGOT 0.3.0.
