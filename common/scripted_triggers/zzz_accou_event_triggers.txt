@@ -1,0 +1,12 @@
+﻿accou_is_valid_event_participant_trigger = {
+	# Available
+	accou_is_available_ai_trigger = yes
+	is_busy_in_events_localised = yes
+
+	# Health conditions
+	NOT = { has_trait = infirm }
+	has_serious_disease_trigger = no
+
+	#AGOT Added
+	is_human = yes
+}
