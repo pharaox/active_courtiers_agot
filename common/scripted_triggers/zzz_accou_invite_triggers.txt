@@ -34,6 +34,12 @@ accou_is_valid_invite_recipient_agot_trigger = {
 		has_trait = silent_sister
 	}
 
+	#AGOT Add maesters to the list
+	NOR = {
+		$ACTOR$ = { has_trait = maester }
+		has_trait = maester
+	}
+
 	#AGOT Added, no non-human interactions
 	$ACTOR$ = { is_human = yes }
 	is_human = yes
