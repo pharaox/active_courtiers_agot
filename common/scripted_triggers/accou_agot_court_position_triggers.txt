@@ -61,4 +61,5 @@ accou_can_be_court_smith_trigger = {
 accou_can_be_head_dragonkeeper_trigger = {
 	is_capable_adult = yes
 	exists = $LIEGE$
+	is_landed = no
 }
