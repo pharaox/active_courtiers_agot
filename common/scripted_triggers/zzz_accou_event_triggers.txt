@@ -1,6 +1,14 @@
 ﻿accou_is_valid_event_participant_trigger = {
 	# Available
-	accou_is_available_ai_trigger = yes
+	trigger_if = {
+		limit = {
+			liege ?= { is_landless_adventurer = yes }
+		}
+		accou_is_available_ai_allow_travelling_trigger = yes
+	}
+	trigger_else = {
+		accou_is_available_ai_trigger = yes
+	}
 	is_busy_in_events_localised = yes
 
 	# Health conditions

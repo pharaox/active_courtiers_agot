@@ -1,17 +1,6 @@
-﻿accou_can_be_master_of_horse_trigger = {
-	is_capable_adult = yes
-	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
-}
-
-accou_can_be_executioner_trigger = {
-	is_capable_adult = yes
-	NOT = { is_spouse_of = $LIEGE$ }
-	is_ruler = no
-	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
-}
-
-accou_is_court_position_available_to_vassals_trigger = {
+﻿accou_is_court_position_available_to_vassals_trigger = {
 	OR = {
+		$POSITION$ = flag:cultural_emissary_court_position
 		$POSITION$ = flag:keeper_of_swans_court_position
 		$POSITION$ = flag:master_of_horse_court_position
 		$POSITION$ = flag:master_of_hunt_court_position

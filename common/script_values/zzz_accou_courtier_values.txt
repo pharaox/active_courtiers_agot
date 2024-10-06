@@ -44,6 +44,14 @@ accou_court_position_aptitude_value = {
 		value = aptitude:court_physician_court_position
 	}
 	else_if = {
+		limit = { scope:court_position = flag:charioteer }
+		value = aptitude:charioteer_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:bookmaker }
+		value = aptitude:bookmaker_court_position
+	}
+	else_if = {
 		limit = { scope:court_position = flag:cultural_emissary }
 		value = aptitude:cultural_emissary_court_position
 	}
@@ -92,6 +100,10 @@ accou_court_position_aptitude_value = {
 		value = aptitude:royal_architect_court_position
 	}
 	else_if = {
+		limit = { scope:court_position = flag:high_almoner }
+		value = aptitude:high_almoner_court_position
+	}
+	else_if = {
 		limit = { scope:court_position = flag:seneschal }
 		value = aptitude:seneschal_court_position
 	}
@@ -132,8 +144,8 @@ accou_court_position_aptitude_value = {
 		value = aptitude:court_artificer_court_position
 	}
 	else_if = {
-		limit = { scope:court_position = flag:court_cave_hermit }
-		value = aptitude:court_cave_hermit_position
+		limit = { scope:court_position = flag:cave_hermit }
+		value = aptitude:cave_hermit_court_position
 	}
 	else_if = {
 		limit = { scope:court_position = flag:master_assassin }
@@ -195,6 +207,14 @@ accou_court_position_candidate_score_value = {
 		value = accou_court_physician_candidate_score_value
 	}
 	else_if = {
+		limit = { scope:court_position = flag:charioteer }
+		value = accou_charioteer_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:bookmaker }
+		value = accou_bookmaker_candidate_score_value
+	}
+	else_if = {
 		limit = { scope:court_position = flag:cultural_emissary }
 		value = accou_cultural_emissary_candidate_score_value
 	}
@@ -243,6 +263,10 @@ accou_court_position_candidate_score_value = {
 		value = accou_royal_architect_candidate_score_value
 	}
 	else_if = {
+		limit = { scope:court_position = flag:high_almoner }
+		value = accou_high_almoner_candidate_score_value
+	}
+	else_if = {
 		limit = { scope:court_position = flag:seneschal }
 		value = accou_seneschal_candidate_score_value
 	}
@@ -283,8 +307,8 @@ accou_court_position_candidate_score_value = {
 		value = accou_court_artificer_candidate_score_value
 	}
 	else_if = {
-		limit = { scope:court_position = flag:court_cave_hermit }
-		value = accou_court_cave_hermit_candidate_score_value
+		limit = { scope:court_position = flag:cave_hermit }
+		value = accou_cave_hermit_candidate_score_value
 	}
 	else_if = {
 		limit = { scope:court_position = flag:master_assassin }

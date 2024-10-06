@@ -38,6 +38,12 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:court_physician = {
 			accou_can_apply_for_court_physician_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:charioteer = {
+			accou_can_apply_for_charioteer_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:bookmaker = {
+			accou_can_apply_for_bookmaker_trigger = { LIEGE = $LIEGE$ }
+		}
 		flag:cultural_emissary = {
 			accou_can_apply_for_cultural_emissary_trigger = { LIEGE = $LIEGE$ }
 		}
@@ -74,6 +80,9 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:royal_architect = {
 			accou_can_apply_for_royal_architect_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:high_almoner = {
+			accou_can_apply_for_high_almoner_trigger = { LIEGE = $LIEGE$ }
+		}
 		flag:seneschal = {
 			accou_can_apply_for_seneschal_trigger = { LIEGE = $LIEGE$ }
 		}
@@ -104,8 +113,8 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:court_artificer = {
 			accou_can_apply_for_court_artificer_trigger = { LIEGE = $LIEGE$ }
 		}
-		flag:court_cave_hermit = {
-			accou_can_apply_for_court_cave_hermit_trigger = { LIEGE = $LIEGE$ }
+		flag:cave_hermit = {
+			accou_can_apply_for_cave_hermit_trigger = { LIEGE = $LIEGE$ }
 		}
 		flag:master_assassin = {
 			accou_can_apply_for_master_assassin_trigger = { LIEGE = $LIEGE$ }

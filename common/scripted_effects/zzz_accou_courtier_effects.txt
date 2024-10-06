@@ -48,6 +48,14 @@ accou_get_better_court_position_options_effect = {
 		add_to_variable_list = { name = $OPTIONS$ target = flag:court_physician }
 	}
 	if = {
+		limit = { accou_can_be_better_charioteer_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:charioteer }
+	}
+	if = {
+		limit = { accou_can_be_better_bookmaker_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:bookmaker }
+	}
+	if = {
 		limit = { accou_can_be_better_cultural_emissary_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:cultural_emissary }
 	}
@@ -96,6 +104,10 @@ accou_get_better_court_position_options_effect = {
 		add_to_variable_list = { name = $OPTIONS$ target = flag:royal_architect }
 	}
 	if = {
+		limit = { accou_can_be_better_high_almoner_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:high_almoner }
+	}
+	if = {
 		limit = { accou_can_be_better_seneschal_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:seneschal }
 	}
@@ -136,8 +148,8 @@ accou_get_better_court_position_options_effect = {
 		add_to_variable_list = { name = $OPTIONS$ target = flag:court_artificer }
 	}
 	if = {
-		limit = { accou_can_be_better_court_cave_hermit_trigger = { LIEGE = $LIEGE$ } }
-		add_to_variable_list = { name = $OPTIONS$ target = flag:court_cave_hermit }
+		limit = { accou_can_be_better_cave_hermit_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:cave_hermit }
 	}
 	if = {
 		limit = { accou_can_be_better_master_assassin_trigger = { LIEGE = $LIEGE$ } }
@@ -288,6 +300,12 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:court_physician = {
 			court_position:court_physician_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:charioteer = {
+			court_position:charioteer_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:bookmaker = {
+			court_position:bookmaker_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		flag:cultural_emissary = {
 			court_position:cultural_emissary_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
@@ -328,6 +346,9 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:royal_architect = {
 			court_position:royal_architect_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:high_almoner = {
+			court_position:high_almoner_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		flag:seneschal = {
 			court_position:seneschal_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
@@ -366,8 +387,8 @@ accou_get_incumbent_court_position_holder_effect = {
 				HOLDER = $INCUMBENT$
 			}
 		}
-		flag:court_cave_hermit = {
-			court_position:court_cave_hermit_position ?= { save_scope_as = $INCUMBENT$ }
+		flag:cave_hermit = {
+			court_position:cave_hermit_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
 		flag:master_assassin = {
 			court_position:master_assassin_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -415,6 +436,18 @@ accou_appoint_court_position_effect = {
 		flag:court_physician = {
 			appoint_court_position = {
 				court_position = court_physician_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:charioteer = {
+			appoint_court_position = {
+				court_position = charioteer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:bookmaker = {
+			appoint_court_position = {
+				court_position = bookmaker_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -490,6 +523,12 @@ accou_appoint_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:high_almoner = {
+			appoint_court_position = {
+				court_position = high_almoner_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 		flag:seneschal = {
 			appoint_court_position = {
 				court_position = seneschal_court_position
@@ -550,9 +589,9 @@ accou_appoint_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
-		flag:court_cave_hermit = {
+		flag:cave_hermit = {
 			appoint_court_position = {
-				court_position = court_cave_hermit_position
+				court_position = cave_hermit_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -641,6 +680,18 @@ accou_revoke_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:charioteer = {
+			revoke_court_position = {
+				court_position = charioteer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:bookmaker = {
+			revoke_court_position = {
+				court_position = bookmaker_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 		flag:cultural_emissary = {
 			revoke_court_position = {
 				court_position = cultural_emissary_court_position
@@ -713,6 +764,12 @@ accou_revoke_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:high_almoner = {
+			revoke_court_position = {
+				court_position = high_almoner_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 		flag:seneschal = {
 			revoke_court_position = {
 				court_position = seneschal_court_position
@@ -773,9 +830,9 @@ accou_revoke_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
-		flag:court_cave_hermit = {
+		flag:cave_hermit = {
 			revoke_court_position = {
-				court_position = court_cave_hermit_position
+				court_position = cave_hermit_court_position
 				recipient = $RECIPIENT$
 			}
 		}
