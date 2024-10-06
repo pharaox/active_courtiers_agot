@@ -6,3 +6,4 @@ common/council_positions/00_council_kingsguard.txt
 common/council_positions/00_council_positions.txt
 common/court_positions/types/00_agot_court_positions.txt
 common/court_positions/types/00_court_positions.txt
+common/scripted_triggers/00_court_position_triggers.txt
