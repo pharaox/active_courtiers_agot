@@ -9,6 +9,6 @@
 
 	# can_fire / can_reassign
 	faith = {
-		has_doctrine_parameter = clerical_appointment_ruler
+		NOT = { has_doctrine_parameter = clerical_appointment_fixed }
 	}
 }
