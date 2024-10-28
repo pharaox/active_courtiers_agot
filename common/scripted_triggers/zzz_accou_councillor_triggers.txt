@@ -1,9 +1,9 @@
 ﻿accou_can_appoint_court_chaplain_trigger = {
 	# valid_position
 	NOR = {
-		has_government = nights_watch_government
+		government_has_flag = government_is_nw
 		any_liege_or_above = {
-			has_government = nights_watch_government
+			government_has_flag = government_is_nw
 		}
 	}
 

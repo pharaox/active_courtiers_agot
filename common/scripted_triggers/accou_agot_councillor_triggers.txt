@@ -12,7 +12,7 @@ can_be_castellan_trigger = {
 
 accou_can_appoint_personal_steward_trigger = {
 	# valid_position
-	has_government = nights_watch_government
+	government_has_flag = government_is_nw
 }
 
 accou_can_appoint_admiral_trigger = {
