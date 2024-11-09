@@ -2,7 +2,7 @@
 
 This is an [Active Courtiers](https://steamcommunity.com/sharedfiles/filedetails/?id=3157170996) compatibility patch for [A Game of Thrones](https://steamcommunity.com/sharedfiles/filedetails/?id=2962333032). For an overview of features and other changes, see the [Active Courtiers README](https://github.com/pharaox/active_courtiers/blob/main/README.md).
 
-The latest version is compatible with CK3 1.13.x, Active Courtiers 0.6.x, and AGOT 0.3.x.
+The latest version is compatible with CK3 1.14.x, Active Courtiers 0.7.x, and AGOT 0.3.5+.
 
 Load order:
 
