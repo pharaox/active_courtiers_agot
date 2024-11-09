@@ -159,6 +159,10 @@ accou_court_position_aptitude_value = {
 		limit = { scope:court_position = flag:chronicler }
 		value = aptitude:chronicler_court_position
 	}
+	else_if = {
+		limit = { scope:court_position = flag:court_brewmaster }
+		value = aptitude:court_brewmaster_court_position
+	}
 	# AGOT
 	else_if = {
 		limit = { scope:court_position = flag:maester }
@@ -321,6 +325,10 @@ accou_court_position_candidate_score_value = {
 	else_if = {
 		limit = { scope:court_position = flag:chronicler }
 		value = accou_chronicler_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_brewmaster }
+		value = accou_court_brewmaster_candidate_score_value
 	}
 	# AGOT
 	else_if = {

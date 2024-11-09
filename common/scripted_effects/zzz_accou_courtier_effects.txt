@@ -163,6 +163,10 @@ accou_get_better_court_position_options_effect = {
 		limit = { accou_can_be_better_chronicler_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:chronicler }
 	}
+	if = {
+		limit = { accou_can_be_better_court_brewmaster_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:court_brewmaster }
+	}
 	# AGOT
 	if = {
 		limit = { accou_can_be_better_maester_trigger = { LIEGE = $LIEGE$ } }
@@ -399,6 +403,9 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:chronicler = {
 			court_position:chronicler_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:court_brewmaster = {
+			court_position:court_brewmaster_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		# AGOT
 		flag:maester = {
 			court_position:maester_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -610,6 +617,12 @@ accou_appoint_court_position_effect = {
 		flag:chronicler = {
 			appoint_court_position = {
 				court_position = chronicler_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_brewmaster = {
+			appoint_court_position = {
+				court_position = court_brewmaster_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -851,6 +864,12 @@ accou_revoke_court_position_effect = {
 		flag:chronicler = {
 			revoke_court_position = {
 				court_position = chronicler_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_brewmaster = {
+			revoke_court_position = {
+				court_position = court_brewmaster_court_position
 				recipient = $RECIPIENT$
 			}
 		}

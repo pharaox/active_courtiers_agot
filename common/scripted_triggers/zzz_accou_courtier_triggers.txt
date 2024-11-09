@@ -125,6 +125,9 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:chronicler = {
 			accou_can_apply_for_chronicler_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:court_brewmaster = {
+			accou_can_apply_for_court_brewmaster_trigger = { LIEGE = $LIEGE$ }
+		}
 		# AGOT
 		flag:maester = {
 			accou_can_apply_for_maester_trigger = { LIEGE = $LIEGE$ }
