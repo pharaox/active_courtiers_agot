@@ -29,7 +29,7 @@
     * => `common/scripted_triggers/accou_marriage_triggers.txt`
       * `accou_is_valid_marriage_target_agot_trigger`
       * `accou_is_valid_marriage_recipient_agot_trigger`
-* `common/council_positions/00_agot_council_positions.txt` (also `common/council_positions/00_council_kingsguard.txt`)
+* `common/council_positions/00_agot_council_positions.txt`
   * Entire file, council positions themselves
     * => `common/script_values/zzz_accou_courtier_values.txt`
     * => `common/scripted_effects/zzz_accou_courtier_effects.txt`

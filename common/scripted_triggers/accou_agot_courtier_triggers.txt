@@ -25,46 +25,6 @@ accou_can_be_better_castellan_trigger = {
 	}
 }
 
-accou_can_be_better_kingsguard_trigger = {
-	save_temporary_scope_as = character
-	can_be_kingsguard_trigger = { COURT_OWNER = $LIEGE$ }
-	prowess >= decent_skill_rating
-	$LIEGE$ = {
-		can_have_kingsguard = yes
-		trigger_if = {
-			limit = {
-				exists = cp:kingsguard_1
-				exists = cp:kingsguard_2
-				exists = cp:kingsguard_3
-				exists = cp:kingsguard_4
-				exists = cp:kingsguard_5
-				exists = cp:kingsguard_6
-			}
-			OR = {
-				cp:kingsguard_1.prowess < scope:character.prowess
-				cp:kingsguard_2.prowess < scope:character.prowess
-				cp:kingsguard_3.prowess < scope:character.prowess
-				cp:kingsguard_4.prowess < scope:character.prowess
-				cp:kingsguard_5.prowess < scope:character.prowess
-				cp:kingsguard_6.prowess < scope:character.prowess
-				is_kingsguard_trigger = yes
-			}
-		}
-		NOR = {
-			any_courtier = {
-				can_be_kingsguard_trigger = { COURT_OWNER = $LIEGE$ }
-				is_kingsguard_trigger = no
-				prowess >= scope:character.prowess
-			}
-			any_vassal = {
-				can_be_kingsguard_trigger = { COURT_OWNER = $LIEGE$ }
-				is_kingsguard_trigger = no
-				prowess >= scope:character.prowess
-			}
-		}
-	}
-}
-
 accou_can_be_better_maester_trigger = {
 	accou_can_be_better_court_position_trigger = {
 		TYPE = maester_court_position
@@ -161,53 +121,6 @@ accou_can_apply_for_castellan_trigger = {
 		NAME = castellan
 		LIEGE = $LIEGE$
 		SKILL = average_of_all_skills
-	}
-}
-
-accou_can_apply_for_kingsguard_trigger = {
-	save_temporary_scope_as = character
-	is_courtier_of = $LIEGE$
-	is_kingsguard_trigger = no
-	can_be_kingsguard_trigger = { COURT_OWNER = $LIEGE$ }
-	prowess >= decent_skill_rating
-	$LIEGE$ = {
-		can_have_kingsguard = yes
-		trigger_if = {
-			limit = {
-				exists = cp:kingsguard_1
-				exists = cp:kingsguard_2
-				exists = cp:kingsguard_3
-				exists = cp:kingsguard_4
-				exists = cp:kingsguard_5
-				exists = cp:kingsguard_6
-			}
-			OR = {
-				cp:kingsguard_1 = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
-				cp:kingsguard_2 = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
-				cp:kingsguard_3 = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
-				cp:kingsguard_4 = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
-				cp:kingsguard_5 = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
-				cp:kingsguard_6 = {
-					NOT = { is_blocked_from_being_fired_from_council_trigger = { COURT_OWNER = $LIEGE$ } }
-					prowess < scope:character.prowess
-				}
-			}
-		}
 	}
 }
 

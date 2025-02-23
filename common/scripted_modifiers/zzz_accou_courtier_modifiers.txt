@@ -72,15 +72,6 @@
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
-	accou_better_councillor_skill_internal_modifier = {
-		CHARACTER = $CHARACTER$
-		COUNCILLOR = $COUNCILLOR$
-		INCUMBENT = $INCUMBENT$
-		NAME = kingsguard
-		SKILL = prowess
-		BASE = $BASE$
-		SCALE = $SCALE$
-	}
 }
 
 accou_better_court_position_aptitude_modifier = {

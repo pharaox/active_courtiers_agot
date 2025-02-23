@@ -63,7 +63,6 @@ echo "- court_chaplain: $(grep -a "accou_courtier.0003 event option a, .*, posit
 echo "- personal_steward: $(grep -a "accou_courtier.0003 event option a, .*, position: personal_steward" debug.log | wc -l)"
 echo "- admiral: $(grep -a "accou_courtier.0003 event option a, .*, position: Admiral" debug.log | wc -l)"
 echo "- castellan: $(grep -a "accou_courtier.0003 event option a, .*, position: Castellan" debug.log | wc -l)"
-echo "- kingsguard: $(grep -a "accou_courtier.0003 event option a, .*, position: kingsguard" debug.log | wc -l)"
 echo "---"
 echo "- court_physician: $(grep -a "accou_courtier.0003 event option a, .*, position: .*court_physician" debug.log | wc -l)"
 echo "- charioteer: $(grep -a "accou_courtier.0003 event option a, .*, position: .*charioteer" debug.log | wc -l)"

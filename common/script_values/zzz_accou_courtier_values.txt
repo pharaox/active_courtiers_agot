@@ -32,10 +32,6 @@
 		limit = { scope:councillor = flag:castellan }
 		value = average_of_all_skills
 	}
-	else_if = {
-		limit = { scope:councillor = flag:kingsguard }
-		value = prowess
-	}
 }
 
 accou_court_position_aptitude_value = {

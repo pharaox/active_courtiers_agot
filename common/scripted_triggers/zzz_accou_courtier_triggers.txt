@@ -26,9 +26,6 @@
 		flag:castellan = {
 			accou_can_apply_for_castellan_trigger = { LIEGE = $LIEGE$ }
 		}
-		flag:kingsguard = {
-			accou_can_apply_for_kingsguard_trigger = { LIEGE = $LIEGE$ }
-		}
 	}
 }
 

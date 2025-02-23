@@ -33,12 +33,6 @@
 		limit = { accou_can_be_better_castellan_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:castellan }
 	}
-	# TODO Kingsguard can't be attracted via marriage, since married characters are not eligible for kingsguard
-	# Enable this when this effect is used in other events than marriage
-	#if = {
-	#	limit = { accou_can_be_better_kingsguard_trigger = { LIEGE = $LIEGE$ } }
-	#	add_to_variable_list = { name = $OPTIONS$ target = flag:kingsguard }
-	#}
 }
 
 accou_get_better_court_position_options_effect = {
@@ -234,9 +228,6 @@ accou_get_incumbent_councillor_effect = {
 		flag:castellan = {
 			cp:councillor_castellan ?= { save_scope_as = $INCUMBENT$ }
 		}
-		flag:kingsguard = {
-			accou_get_min_prowess_kingsguard_member_effect = { MEMBER = $INCUMBENT$ }
-		}
 	}
 }
 
@@ -291,9 +282,6 @@ accou_assign_councillor_effect = {
 				type = councillor_castellan
 				target = $TARGET$
 			}
-		}
-		flag:kingsguard = {
-			accou_assign_kingsguard_effect = { TARGET = $TARGET$ }
 		}
 	}
 }
