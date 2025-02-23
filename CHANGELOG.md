@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 0.5.6
+
+* Adapted to AGOT 0.3.10 and Active Courtiers 0.7.1.
+* Removed any any mention of Kingsguard council positions since they are rather special in AGOT, and for better compatibility with Legacy of Valyria.
+
 ## Version 0.5.5
 
 * Adapted to AGOT 0.3.5.
