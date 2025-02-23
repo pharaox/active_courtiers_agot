@@ -1,11 +1,106 @@
-﻿accou_can_appoint_court_chaplain_trigger = {
+﻿accou_can_be_chancellor_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
+	can_be_chancellor_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	#AGOT Added
+	NOT = { has_character_flag = nw_ranger_title }
+}
+
+accou_can_be_steward_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
+	can_be_steward_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	#AGOT Added
+	NOT = { has_character_flag = nw_ranger_title }
+}
+
+accou_can_be_marshal_trigger = {
+	# valid_character
+	#AGOT Modified
+	#exists = $COURT_OWNER$
+	#can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	OR = {
+		AND = {
+			exists = $COURT_OWNER$
+			can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
+			NOT = { $COURT_OWNER$ = title:k_the_wall.holder }
+		}
+		AND = {
+			exists = $COURT_OWNER$
+			can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
+			$COURT_OWNER$ = title:k_the_wall.holder
+			title:k_the_wall.holder = { NOT = { has_character_flag = fr_assign_block } }
+			has_trait = nightswatch
+			has_trait = lifestyle_nw_ranger
+			is_landed = no
+			OR = {
+				$COURT_OWNER$ = {
+					NOT = {
+						any_vassal = {
+							has_character_flag = nw_ranger_title
+							is_alive = yes
+						}
+					}
+				}
+				has_character_flag = nw_ranger_title
+			}
+
+		}
+	}
+}
+
+accou_can_be_spymaster_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
+	can_be_spymaster_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	#AGOT Added
+	NOT = { has_character_flag = nw_ranger_title }
+}
+
+accou_can_be_court_chaplain_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
+	can_be_court_chaplain_trigger = { COURT_OWNER = $COURT_OWNER$ }
+}
+
+accou_can_appoint_chancellor_trigger = {
 	# valid_position
+	NOT = { government_has_flag = government_is_landless_adventurer }
+	#AGOT Added
+	is_landless_nw_character = no
+}
+
+accou_can_appoint_steward_trigger = {
+	# valid_position
+	NOT = { government_has_flag = government_is_landless_adventurer }
+	#AGOT Added
+	is_landless_nw_character = no
+}
+
+accou_can_appoint_marshal_trigger = {
+	# valid_position
+	NOT = { government_has_flag = government_is_landless_adventurer }
+	#AGOT Added
+	is_landless_nw_character = no
+}
+
+accou_can_appoint_spymaster_trigger = {
+	# valid_position
+	NOT = { government_has_flag = government_is_landless_adventurer }
+	#AGOT Added
+	is_landless_nw_character = no
+}
+
+accou_can_appoint_court_chaplain_trigger = {
+	# valid_position
+	#AGOT Added
 	NOR = {
 		government_has_flag = government_is_nw
 		any_liege_or_above = {
 			government_has_flag = government_is_nw
 		}
 	}
+	is_landless_nw_character = no
 
 	# can_fire / can_reassign
 	faith = {

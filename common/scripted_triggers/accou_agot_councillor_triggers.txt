@@ -1,18 +1,31 @@
-﻿can_be_personal_steward_trigger = {
+﻿accou_can_be_personal_steward_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
 	OR = {
 		has_trait = nightswatch
 		has_trait = nightswatch_historical
 	}
-	exists = $COURT_OWNER$
+	NOT = { has_character_flag = nw_ranger_title }
 }
 
-can_be_castellan_trigger = {
+accou_can_be_admiral_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
+	can_be_admiral_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	NOT = { has_character_flag = nw_ranger_title }
+}
+
+accou_can_be_castellan_trigger = {
+	# valid_character
+	exists = $COURT_OWNER$
 	can_be_steward_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	NOT = { has_character_flag = nw_ranger_title }
 }
 
 accou_can_appoint_personal_steward_trigger = {
 	# valid_position
 	government_has_flag = government_is_nw
+	is_landless_nw_character = no
 }
 
 accou_can_appoint_admiral_trigger = {
@@ -20,8 +33,10 @@ accou_can_appoint_admiral_trigger = {
 	any_sub_realm_county = {
 		is_coastal_county = yes
 	}
+	is_landless_nw_character = no
 }
 
 accou_can_appoint_castellan_trigger = {
-	always = yes
+	# valid_position
+	is_landless_nw_character = no
 }
