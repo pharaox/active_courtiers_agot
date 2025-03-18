@@ -67,28 +67,28 @@ accou_can_appoint_chancellor_trigger = {
 	# valid_position
 	NOT = { government_has_flag = government_is_landless_adventurer }
 	#AGOT Added
-	is_landless_nw_character = no
+	NOT = { government_has_flag = government_is_custom_landless }
 }
 
 accou_can_appoint_steward_trigger = {
 	# valid_position
 	NOT = { government_has_flag = government_is_landless_adventurer }
 	#AGOT Added
-	is_landless_nw_character = no
+	NOT = { government_has_flag = government_is_custom_landless }
 }
 
 accou_can_appoint_marshal_trigger = {
 	# valid_position
 	NOT = { government_has_flag = government_is_landless_adventurer }
 	#AGOT Added
-	is_landless_nw_character = no
+	NOT = { government_has_flag = government_is_custom_landless }
 }
 
 accou_can_appoint_spymaster_trigger = {
 	# valid_position
 	NOT = { government_has_flag = government_is_landless_adventurer }
 	#AGOT Added
-	is_landless_nw_character = no
+	NOT = { government_has_flag = government_is_custom_landless }
 }
 
 accou_can_appoint_court_chaplain_trigger = {
@@ -100,7 +100,6 @@ accou_can_appoint_court_chaplain_trigger = {
 			government_has_flag = government_is_nw
 		}
 	}
-	is_landless_nw_character = no
 
 	# can_fire / can_reassign
 	faith = {

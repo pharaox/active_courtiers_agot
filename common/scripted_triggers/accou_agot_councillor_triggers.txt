@@ -25,7 +25,7 @@ accou_can_be_castellan_trigger = {
 accou_can_appoint_personal_steward_trigger = {
 	# valid_position
 	government_has_flag = government_is_nw
-	is_landless_nw_character = no
+	agot_is_landless_nw_character = no
 }
 
 accou_can_appoint_admiral_trigger = {
@@ -33,10 +33,10 @@ accou_can_appoint_admiral_trigger = {
 	any_sub_realm_county = {
 		is_coastal_county = yes
 	}
-	is_landless_nw_character = no
+	agot_is_landless_nw_character = no
 }
 
 accou_can_appoint_castellan_trigger = {
 	# valid_position
-	is_landless_nw_character = no
+	agot_is_landless_nw_character = no
 }
