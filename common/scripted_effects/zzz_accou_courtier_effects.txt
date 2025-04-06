@@ -198,6 +198,14 @@ accou_get_better_court_position_options_effect = {
 		limit = { accou_can_be_better_head_dragonkeeper_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:head_dragonkeeper }
 	}
+	if = {
+		limit = { accou_can_be_better_bloodrider_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:bloodrider }
+	}
+	if = {
+		limit = { accou_can_be_better_first_sword_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:first_sword }
+	}
 }
 
 accou_get_incumbent_councillor_effect = {
@@ -421,6 +429,16 @@ accou_get_incumbent_court_position_holder_effect = {
 		}
 		flag:head_dragonkeeper = {
 			court_position:head_dragonkeeper_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:bloodrider = { # 2
+			accou_get_min_apitude_court_position_holder_effect = {
+				TYPE = bloodrider_court_position
+				COUNT = 2
+				HOLDER = $INCUMBENT$
+			}
+		}
+		flag:first_sword = {
+			court_position:first_sword_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
 	}
 }
@@ -669,6 +687,18 @@ accou_appoint_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:bloodrider = {
+			appoint_court_position = {
+				court_position = bloodrider_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:first_sword = {
+			appoint_court_position = {
+				court_position = first_sword_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 	}
 }
 
@@ -913,6 +943,18 @@ accou_revoke_court_position_effect = {
 		flag:head_dragonkeeper = {
 			revoke_court_position = {
 				court_position = head_dragonkeeper_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:bloodrider = {
+			revoke_court_position = {
+				court_position = bloodrider_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:first_sword = {
+			revoke_court_position = {
+				court_position = first_sword_court_position
 				recipient = $RECIPIENT$
 			}
 		}

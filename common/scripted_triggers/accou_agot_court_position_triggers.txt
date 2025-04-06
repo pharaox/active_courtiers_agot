@@ -11,7 +11,7 @@
 	trigger_if = {
 		limit = {
 			$LIEGE$ = {
-				primary_title = title:e_the_iron_throne
+				has_title = title:e_the_iron_throne
 			}
 		}
 		has_inactive_trait = grandmaester
@@ -62,4 +62,30 @@ accou_can_be_head_dragonkeeper_trigger = {
 	is_capable_adult = yes
 	exists = $LIEGE$
 	is_landed = no
+}
+
+accou_can_be_bloodrider_trigger = {
+	is_capable_adult = yes
+	is_male = yes
+	NOR = {
+		has_trait = blind
+		has_trait = infirm
+		has_trait = disloyal
+	}
+	NOT = { is_spouse_of = $LIEGE$ }
+	NOR = {
+		any_heir_title = {}
+		any_pretender_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value <= 2
+			}
+		}
+	}
+	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
+}
+
+accou_can_be_first_sword_trigger = {
+	is_capable_adult = yes
+	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
 }

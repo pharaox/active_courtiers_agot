@@ -97,6 +97,22 @@ accou_can_be_better_head_dragonkeeper_trigger = {
 	}
 }
 
+accou_can_be_better_bloodrider_trigger = {
+	accou_can_be_better_court_position_trigger = {
+		TYPE = bloodrider_court_position
+		NAME = bloodrider
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_be_better_first_sword_trigger = {
+	accou_can_be_better_court_position_trigger = {
+		TYPE = first_sword_court_position
+		NAME = first_sword
+		LIEGE = $LIEGE$
+	}
+}
+
 accou_can_apply_for_personal_steward_trigger = {
 	accou_can_apply_for_councillor_trigger = {
 		TYPE = councillor_personal_steward
@@ -183,6 +199,20 @@ accou_can_apply_for_court_smith_trigger = {
 accou_can_apply_for_head_dragonkeeper_trigger = {
 	accou_can_apply_for_court_position_trigger = {
 		TYPE = head_dragonkeeper_court_position
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_apply_for_bloodrider_trigger = {
+	accou_can_apply_for_court_position_trigger = {
+		TYPE = bloodrider_court_position
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_apply_for_first_sword_trigger = {
+	accou_can_apply_for_court_position_trigger = {
+		TYPE = first_sword_court_position
 		LIEGE = $LIEGE$
 	}
 }

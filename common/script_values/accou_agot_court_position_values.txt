@@ -85,3 +85,11 @@ accou_court_smith_candidate_score_value = {
 accou_head_dragonkeeper_candidate_score_value = {
 	value = 150
 }
+
+accou_bloodrider_candidate_score_value = {
+	value = 100
+}
+
+accou_first_sword_candidate_score_value = {
+	value = 50
+}
