@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.7.0
+
+* Adapted to AGOT 0.4.0.
+
 ## Version 0.6.0
 
 * Adapted to CK3 1.15.0 and AGOT 0.3.12.1.
