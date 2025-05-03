@@ -5,6 +5,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = chancellor
 		SKILL = diplomacy
+		THRESHOLD = mediocre_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -14,6 +15,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = steward
 		SKILL = stewardship
+		THRESHOLD = mediocre_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -23,6 +25,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = marshal
 		SKILL = martial
+		THRESHOLD = mediocre_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -32,6 +35,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = spymaster
 		SKILL = intrigue
+		THRESHOLD = mediocre_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -41,6 +45,17 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = court_chaplain
 		SKILL = learning
+		THRESHOLD = mediocre_skill_rating
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_councillor_skill_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COUNCILLOR = $COUNCILLOR$
+		INCUMBENT = $INCUMBENT$
+		NAME = kurultai
+		SKILL = accou_kurultai_skill_value
+		THRESHOLD = low_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -51,6 +66,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = personal_steward
 		SKILL = average_of_all_skills
+		THRESHOLD = low_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -60,6 +76,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = admiral
 		SKILL = martial
+		THRESHOLD = mediocre_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -69,6 +86,7 @@
 		INCUMBENT = $INCUMBENT$
 		NAME = castellan
 		SKILL = average_of_all_skills
+		THRESHOLD = low_skill_rating
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -106,6 +124,15 @@ accou_better_court_position_aptitude_modifier = {
 		CHARACTER = $CHARACTER$
 		COURT_POSITION = $COURT_POSITION$
 		INCUMBENT = $INCUMBENT$
+		TYPE = akolouthos_court_position
+		NAME = akolouthos
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
 		TYPE = cultural_emissary_court_position
 		NAME = cultural_emissary
 		BASE = $BASE$
@@ -117,6 +144,24 @@ accou_better_court_position_aptitude_modifier = {
 		INCUMBENT = $INCUMBENT$
 		TYPE = keeper_of_swans_court_position
 		NAME = keeper_of_swans
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = chief_qadi_court_position
+		NAME = chief_qadi
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = garuda_court_position
+		NAME = garuda
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
@@ -351,6 +396,87 @@ accou_better_court_position_aptitude_modifier = {
 		INCUMBENT = $INCUMBENT$
 		TYPE = court_brewmaster_court_position
 		NAME = court_brewmaster
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = eparch_court_position
+		NAME = eparch
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_astrologer_court_position
+		NAME = court_astrologer
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = boyan_court_position
+		NAME = boyan
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = siege_engineer_court_position
+		NAME = siege_engineer
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = yurtchi_court_position
+		NAME = yurtchi
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = cherbi_court_position
+		NAME = cherbi
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = yeke_jarquchi_court_position
+		NAME = yeke_jarquchi
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = foreign_emissary_court_position
+		NAME = foreign_emissary
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = keeper_of_the_horses_court_position
+		NAME = keeper_of_the_horses
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}

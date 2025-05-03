@@ -20,6 +20,10 @@
 		limit = { accou_can_be_better_court_chaplain_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:court_chaplain }
 	}
+	if = {
+		limit = { accou_can_be_better_kurultai_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:kurultai }
+	}
 	# AGOT
 	if = {
 		limit = { accou_can_be_better_personal_steward_trigger = { LIEGE = $LIEGE$ } }
@@ -50,12 +54,24 @@ accou_get_better_court_position_options_effect = {
 		add_to_variable_list = { name = $OPTIONS$ target = flag:bookmaker }
 	}
 	if = {
+		limit = { accou_can_be_better_akolouthos_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:akolouthos }
+	}
+	if = {
 		limit = { accou_can_be_better_cultural_emissary_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:cultural_emissary }
 	}
 	if = {
 		limit = { accou_can_be_better_keeper_of_swans_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:keeper_of_swans }
+	}
+	if = {
+		limit = { accou_can_be_better_chief_qadi_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:chief_qadi }
+	}
+	if = {
+		limit = { accou_can_be_better_garuda_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:garuda }
 	}
 	if = {
 		limit = { accou_can_be_better_court_gardener_trigger = { LIEGE = $LIEGE$ } }
@@ -161,6 +177,42 @@ accou_get_better_court_position_options_effect = {
 		limit = { accou_can_be_better_court_brewmaster_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:court_brewmaster }
 	}
+	if = {
+		limit = { accou_can_be_better_eparch_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:eparch }
+	}
+	if = {
+		limit = { accou_can_be_better_court_astrologer_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:court_astrologer }
+	}
+	if = {
+		limit = { accou_can_be_better_boyan_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:boyan }
+	}
+	if = {
+		limit = { accou_can_be_better_siege_engineer_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:siege_engineer }
+	}
+	if = {
+		limit = { accou_can_be_better_yurtchi_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:yurtchi }
+	}
+	if = {
+		limit = { accou_can_be_better_cherbi_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:cherbi }
+	}
+	if = {
+		limit = { accou_can_be_better_yeke_jarquchi_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:yeke_jarquchi }
+	}
+	if = {
+		limit = { accou_can_be_better_foreign_emissary_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:foreign_emissary }
+	}
+	if = {
+		limit = { accou_can_be_better_keeper_of_the_horses_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:keeper_of_the_horses }
+	}
 	# AGOT
 	if = {
 		limit = { accou_can_be_better_maester_trigger = { LIEGE = $LIEGE$ } }
@@ -226,6 +278,9 @@ accou_get_incumbent_councillor_effect = {
 		flag:court_chaplain = {
 			cp:councillor_court_chaplain ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:kurultai = {
+			accou_get_min_skill_kurultai_effect = { HOLDER = $INCUMBENT$ }
+		}
 		# AGOT
 		flag:personal_steward = {
 			cp:councillor_personal_steward ?= { save_scope_as = $INCUMBENT$ }
@@ -272,6 +327,44 @@ accou_assign_councillor_effect = {
 				target = $TARGET$
 			}
 		}
+		flag:kurultai = {
+			if = {
+				limit = {
+					NOT = { exists = cp:councillor_kurultai_1 }
+				}
+				assign_councillor_type = {
+					type = councillor_kurultai_1
+					target = $TARGET$
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = cp:councillor_kurultai_2 }
+				}
+				assign_councillor_type = {
+					type = councillor_kurultai_2
+					target = $TARGET$
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = cp:councillor_kurultai_3 }
+				}
+				assign_councillor_type = {
+					type = councillor_kurultai_3
+					target = $TARGET$
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = cp:councillor_kurultai_4 }
+				}
+				assign_councillor_type = {
+					type = councillor_kurultai_4
+					target = $TARGET$
+				}
+			}
+		}
 		# AGOT
 		flag:personal_steward = {
 			assign_councillor_type = {
@@ -306,11 +399,24 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:bookmaker = {
 			court_position:bookmaker_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:akolouthos = {
+			court_position:akolouthos_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		flag:cultural_emissary = {
 			court_position:cultural_emissary_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
 		flag:keeper_of_swans = {
 			court_position:keeper_of_swans_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:chief_qadi = {
+			court_position:chief_qadi_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:garuda = { # 5
+			accou_get_min_apitude_court_position_holder_effect = {
+				TYPE = garuda_court_position
+				COUNT = 5
+				HOLDER = $INCUMBENT$
+			}
 		}
 		flag:court_gardener = {
 			court_position:court_gardener_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -402,6 +508,33 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:court_brewmaster = {
 			court_position:court_brewmaster_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:eparch = {
+			court_position:eparch_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:court_astrologer = {
+			court_position:court_astrologer_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:boyan = {
+			court_position:boyan_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:siege_engineer = {
+			court_position:siege_engineer_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:yurtchi = {
+			court_position:yurtchi_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:cherbi = {
+			court_position:cherbi_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:yeke_jarquchi = {
+			court_position:yeke_jarquchi_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:foreign_emissary = {
+			court_position:foreign_emissary_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:keeper_of_the_horses = {
+			court_position:keeper_of_the_horses_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		# AGOT
 		flag:maester = {
 			court_position:maester_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -464,6 +597,12 @@ accou_appoint_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:akolouthos = {
+			appoint_court_position = {
+				court_position = akolouthos_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 		flag:cultural_emissary = {
 			appoint_court_position = {
 				court_position = cultural_emissary_court_position
@@ -473,6 +612,18 @@ accou_appoint_court_position_effect = {
 		flag:keeper_of_swans = {
 			appoint_court_position = {
 				court_position = keeper_of_swans_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:chief_qadi = {
+			appoint_court_position = {
+				court_position = chief_qadi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:garuda = {
+			appoint_court_position = {
+				court_position = garuda_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -629,6 +780,60 @@ accou_appoint_court_position_effect = {
 		flag:court_brewmaster = {
 			appoint_court_position = {
 				court_position = court_brewmaster_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:eparch = {
+			appoint_court_position = {
+				court_position = eparch_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_astrologer = {
+			appoint_court_position = {
+				court_position = court_astrologer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:boyan = {
+			appoint_court_position = {
+				court_position = boyan_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:siege_engineer = {
+			appoint_court_position = {
+				court_position = siege_engineer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:yurtchi = {
+			appoint_court_position = {
+				court_position = yurtchi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:cherbi = {
+			appoint_court_position = {
+				court_position = cherbi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:yeke_jarquchi = {
+			appoint_court_position = {
+				court_position = yeke_jarquchi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:foreign_emissary = {
+			appoint_court_position = {
+				court_position = foreign_emissary_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:keeper_of_the_horses = {
+			appoint_court_position = {
+				court_position = keeper_of_the_horses_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -723,6 +928,12 @@ accou_revoke_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:akolouthos = {
+			revoke_court_position = {
+				court_position = akolouthos_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 		flag:cultural_emissary = {
 			revoke_court_position = {
 				court_position = cultural_emissary_court_position
@@ -732,6 +943,18 @@ accou_revoke_court_position_effect = {
 		flag:keeper_of_swans = {
 			revoke_court_position = {
 				court_position = keeper_of_swans_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:chief_qadi = {
+			revoke_court_position = {
+				court_position = chief_qadi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:garuda = {
+			revoke_court_position = {
+				court_position = garuda_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -888,6 +1111,60 @@ accou_revoke_court_position_effect = {
 		flag:court_brewmaster = {
 			revoke_court_position = {
 				court_position = court_brewmaster_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:eparch = {
+			revoke_court_position = {
+				court_position = eparch_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_astrologer = {
+			revoke_court_position = {
+				court_position = court_astrologer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:boyan = {
+			revoke_court_position = {
+				court_position = boyan_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:siege_engineer = {
+			revoke_court_position = {
+				court_position = siege_engineer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:yurtchi = {
+			revoke_court_position = {
+				court_position = yurtchi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:cherbi = {
+			revoke_court_position = {
+				court_position = cherbi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:yeke_jarquchi = {
+			revoke_court_position = {
+				court_position = yeke_jarquchi_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:foreign_emissary = {
+			revoke_court_position = {
+				court_position = foreign_emissary_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:keeper_of_the_horses = {
+			revoke_court_position = {
+				court_position = keeper_of_the_horses_court_position
 				recipient = $RECIPIENT$
 			}
 		}

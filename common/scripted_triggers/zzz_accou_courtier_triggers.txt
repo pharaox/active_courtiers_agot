@@ -16,6 +16,9 @@
 		flag:court_chaplain = {
 			accou_can_apply_for_court_chaplain_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:kurultai = {
+			accou_can_apply_for_kurultai_trigger = { LIEGE = $LIEGE$ }
+		}
 		# AGOT
 		flag:personal_steward = {
 			accou_can_apply_for_personal_steward_trigger = { LIEGE = $LIEGE$ }
@@ -41,11 +44,20 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:bookmaker = {
 			accou_can_apply_for_bookmaker_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:akolouthos = {
+			accou_can_apply_for_akolouthos_trigger = { LIEGE = $LIEGE$ }
+		}
 		flag:cultural_emissary = {
 			accou_can_apply_for_cultural_emissary_trigger = { LIEGE = $LIEGE$ }
 		}
 		flag:keeper_of_swans = {
 			accou_can_apply_for_keeper_of_swans_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:chief_qadi = {
+			accou_can_apply_for_chief_qadi_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:garuda = {
+			accou_can_apply_for_garuda_trigger = { LIEGE = $LIEGE$ }
 		}
 		flag:court_gardener = {
 			accou_can_apply_for_court_gardener_trigger = { LIEGE = $LIEGE$ }
@@ -124,6 +136,33 @@ accou_can_apply_for_court_position_option_trigger = {
 		}
 		flag:court_brewmaster = {
 			accou_can_apply_for_court_brewmaster_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:eparch = {
+			accou_can_apply_for_eparch_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:court_astrologer = {
+			accou_can_apply_for_court_astrologer_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:boyan = {
+			accou_can_apply_for_boyan_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:siege_engineer = {
+			accou_can_apply_for_siege_engineer_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:yurtchi = {
+			accou_can_apply_for_yurtchi_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:cherbi = {
+			accou_can_apply_for_cherbi_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:_yeke_jarquchi = {
+			accou_can_apply_for_yeke_jarquchi_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:foreign_emissary = {
+			accou_can_apply_for_foreign_emissary_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:keeper_of_the_horses = {
+			accou_can_apply_for_keeper_of_the_horses_trigger = { LIEGE = $LIEGE$ }
 		}
 		# AGOT
 		flag:maester = {

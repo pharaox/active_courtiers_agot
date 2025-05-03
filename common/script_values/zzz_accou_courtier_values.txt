@@ -19,6 +19,10 @@
 		limit = { scope:councillor = flag:court_chaplain }
 		value = learning
 	}
+	else_if = {
+		limit = { scope:councillor = flag:kurultai }
+		value = accou_kurultai_skill_value
+	}
 	# AGOT
 	else_if = {
 		limit = { scope:councillor = flag:personal_steward }
@@ -48,12 +52,24 @@ accou_court_position_aptitude_value = {
 		value = aptitude:bookmaker_court_position
 	}
 	else_if = {
+		limit = { scope:court_position = flag:akolouthos }
+		value = aptitude:akolouthos_court_position
+	}
+	else_if = {
 		limit = { scope:court_position = flag:cultural_emissary }
 		value = aptitude:cultural_emissary_court_position
 	}
 	else_if = {
 		limit = { scope:court_position = flag:keeper_of_swans }
 		value = aptitude:keeper_of_swans_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:chief_qadi }
+		value = aptitude:chief_qadi_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:garuda }
+		value = aptitude:garuda_court_position
 	}
 	else_if = {
 		limit = { scope:court_position = flag:court_gardener }
@@ -159,6 +175,42 @@ accou_court_position_aptitude_value = {
 		limit = { scope:court_position = flag:court_brewmaster }
 		value = aptitude:court_brewmaster_court_position
 	}
+	else_if = {
+		limit = { scope:court_position = flag:eparch }
+		value = aptitude:eparch_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_astrologer }
+		value = aptitude:court_astrologer_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:boyan }
+		value = aptitude:boyan_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:siege_engineer }
+		value = aptitude:siege_engineer_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:yurtchi }
+		value = aptitude:yurtchi_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:cherbi }
+		value = aptitude:cherbi_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:yeke_jarquchi }
+		value = aptitude:yeke_jarquchi_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:foreign_emissary }
+		value = aptitude:foreign_emissary_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:keeper_of_the_horses }
+		value = aptitude:keeper_of_the_horses_court_position
+	}
 	# AGOT
 	else_if = {
 		limit = { scope:court_position = flag:maester }
@@ -223,12 +275,24 @@ accou_court_position_candidate_score_value = {
 		value = accou_bookmaker_candidate_score_value
 	}
 	else_if = {
+		limit = { scope:court_position = flag:akolouthos }
+		value = accou_akolouthos_candidate_score_value
+	}
+	else_if = {
 		limit = { scope:court_position = flag:cultural_emissary }
 		value = accou_cultural_emissary_candidate_score_value
 	}
 	else_if = {
 		limit = { scope:court_position = flag:keeper_of_swans }
 		value = accou_keeper_of_swans_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:chief_qadi }
+		value = accou_chief_qadi_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:garuda }
+		value = accou_garuda_candidate_score_value
 	}
 	else_if = {
 		limit = { scope:court_position = flag:court_gardener }
@@ -333,6 +397,42 @@ accou_court_position_candidate_score_value = {
 	else_if = {
 		limit = { scope:court_position = flag:court_brewmaster }
 		value = accou_court_brewmaster_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:eparch }
+		value = accou_eparch_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_astrologer }
+		value = accou_court_astrologer_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:boyan }
+		value = accou_boyan_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:siege_engineer }
+		value = accou_siege_engineer_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:yurtchi }
+		value = accou_yurtchi_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:cherbi }
+		value = accou_cherbi_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:yeke_jarquchi }
+		value = accou_yeke_jarquchi_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:foreign_emissary }
+		value = accou_foreign_emissary_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:keeper_of_the_horses }
+		value = accou_keeper_of_the_horses_candidate_score_value
 	}
 	# AGOT
 	else_if = {

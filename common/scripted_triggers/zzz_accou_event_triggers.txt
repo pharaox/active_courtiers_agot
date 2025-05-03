@@ -18,3 +18,12 @@
 	#AGOT Added
 	is_human = yes
 }
+
+accou_is_landless_ruler_trigger = {
+	OR = {
+		is_landless_adventurer = yes
+		is_landless_nomad = yes
+		#AGOT Added
+		agot_is_landless_character = yes
+	}
+}

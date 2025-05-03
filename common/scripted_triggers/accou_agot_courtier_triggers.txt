@@ -4,6 +4,7 @@
 		NAME = personal_steward
 		LIEGE = $LIEGE$
 		SKILL = average_of_all_skills
+		THRESHOLD = low_skill_rating
 	}
 }
 
@@ -13,6 +14,7 @@ accou_can_be_better_admiral_trigger = {
 		NAME = admiral
 		LIEGE = $LIEGE$
 		SKILL = martial
+		THRESHOLD = decent_skill_rating
 	}
 }
 
@@ -22,6 +24,7 @@ accou_can_be_better_castellan_trigger = {
 		NAME = castellan
 		LIEGE = $LIEGE$
 		SKILL = average_of_all_skills
+		THRESHOLD = low_skill_rating
 	}
 }
 
@@ -119,6 +122,7 @@ accou_can_apply_for_personal_steward_trigger = {
 		NAME = personal_steward
 		LIEGE = $LIEGE$
 		SKILL = average_of_all_skills
+		THRESHOLD = low_skill_rating
 	}
 }
 
@@ -128,6 +132,7 @@ accou_can_apply_for_admiral_trigger = {
 		NAME = admiral
 		LIEGE = $LIEGE$
 		SKILL = martial
+		THRESHOLD = decent_skill_rating
 	}
 }
 
@@ -137,6 +142,7 @@ accou_can_apply_for_castellan_trigger = {
 		NAME = castellan
 		LIEGE = $LIEGE$
 		SKILL = average_of_all_skills
+		THRESHOLD = low_skill_rating
 	}
 }
 

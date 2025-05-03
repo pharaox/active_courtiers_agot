@@ -57,7 +57,7 @@
     * => `common/script_values/accou_agot_court_position_values.txt`
   * Entire file, `is_shown_character` / `valid_character` sections
     * => `common/scripted_triggers/accou_agot_court_position_triggers.txt`
-* `common/court_positions/types/00_court_positions.txt`
+* `common/court_positions/types/00_court_positions.txt`, `common/court_positions/types/00_mpo_court_positions.txt`
   * Entire file, court positions themselves
     * => `common/script_values/zzz_accou_courtier_values.txt`
     * => `common/scripted_effects/zzz_accou_courtier_effects.txt`
