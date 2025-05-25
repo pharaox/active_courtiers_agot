@@ -70,3 +70,6 @@
       * `accou_court_position_traits_character_value` (not changed)
   * Entire file, `is_shown_character` / `valid_character` sections
     * => `common/scripted_triggers/zzz_accou_court_position_triggers.txt`
+* `common/scripted_triggers/00_court_position_triggers.txt`
+  * Court position validity triggers
+    * => `common/scripted_triggers/zzz_accou_court_position_triggers.txt`

@@ -1,5 +1,6 @@
 ﻿accou_can_be_personal_steward_trigger = {
 	# valid_character
+	can_be_councillor_basics_trigger = yes
 	exists = $COURT_OWNER$
 	OR = {
 		has_trait = nightswatch
