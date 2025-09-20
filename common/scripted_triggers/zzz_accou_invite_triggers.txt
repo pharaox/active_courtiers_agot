@@ -16,31 +16,17 @@ accou_is_valid_invite_recipient_agot_trigger = {
 			$ACTOR$.culture = { agot_is_wildling_culture = yes }
 			culture = { agot_is_wildling_culture = no }
 		}
-	}
-
-	#AGOT Added, NW can't recruit this way
-	NOR = {
+		# Night's Watch
 		$ACTOR$ = { has_trait = nightswatch }
 		has_trait = nightswatch
-	}
-
-	#AGOT Added, KG can't leave their post
-	NOT = {
-		has_trait = kingsguard
-	}
-
-	#AGOT Added, Silent Sisters can't leave the sisterhood
-	NOT = {
-		has_trait = silent_sister
-	}
-
-	#AGOT Add maesters to the list
-	NOR = {
+		# Maesters
 		$ACTOR$ = { has_trait = maester }
 		has_trait = maester
+		# Kingsguard
+		has_trait = kingsguard
+		# Silent Sisterhood
+		has_trait = silent_sister
 	}
-
-	#AGOT Added, no non-human interactions
 	$ACTOR$ = { is_human = yes }
 	is_human = yes
 }

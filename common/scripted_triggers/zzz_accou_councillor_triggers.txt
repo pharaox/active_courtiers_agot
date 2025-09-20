@@ -15,21 +15,24 @@ accou_can_be_steward_trigger = {
 }
 
 accou_can_be_marshal_trigger = {
-	# valid_character
-	#AGOT Modified
-	#exists = $COURT_OWNER$
-	#can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	exists = $COURT_OWNER$
+	can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	#AGOT Disabled
+	#NOT = { this = character:528 }
+	#AGOT Added
 	OR = {
+		NOT = { $COURT_OWNER$ = title:k_the_wall.holder }
 		AND = {
-			exists = $COURT_OWNER$
-			can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
-			NOT = { $COURT_OWNER$ = title:k_the_wall.holder }
+			$COURT_OWNER$ = title:k_the_wall.holder
+			NOT = { $COURT_OWNER$ = { has_trait = nightswatch } }
+			NOT = { has_trait = nightswatch }
 		}
 		AND = {
-			exists = $COURT_OWNER$
-			can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
 			$COURT_OWNER$ = title:k_the_wall.holder
-			title:k_the_wall.holder = { NOT = { has_character_flag = fr_assign_block } }
+			title:k_the_wall.holder = {
+				has_trait = nightswatch
+				NOT = { has_character_flag = fr_assign_block }
+			}
 			has_trait = nightswatch
 			has_trait = lifestyle_nw_ranger
 			is_landed = no
@@ -44,7 +47,6 @@ accou_can_be_marshal_trigger = {
 				}
 				has_character_flag = nw_ranger_title
 			}
-
 		}
 	}
 }
