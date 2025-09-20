@@ -1,8 +1,8 @@
-version="0.8.0"
+version="0.9.0"
 tags={
 	"Gameplay"
 	"Character Interactions"
 	"Events"
 }
 name="Active Courtiers AGOT Compatibility"
-supported_version="1.16.*"
+supported_version="1.17.*"
