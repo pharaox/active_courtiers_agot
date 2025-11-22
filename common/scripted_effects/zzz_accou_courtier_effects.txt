@@ -213,6 +213,42 @@ accou_get_better_court_position_options_effect = {
 		limit = { accou_can_be_better_keeper_of_the_horses_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:keeper_of_the_horses }
 	}
+	if = {
+		limit = { accou_can_be_better_grand_preceptor_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:grand_preceptor }
+	}
+	if = {
+		limit = { accou_can_be_better_grand_mentor_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:grand_mentor }
+	}
+	if = {
+		limit = { accou_can_be_better_grand_guardian_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:grand_guardian }
+	}
+	if = {
+		limit = { accou_can_be_better_fire_dragon_engineer_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:fire_dragon_engineer }
+	}
+	if = {
+		limit = { accou_can_be_better_keeper_of_the_harem_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:keeper_of_the_harem }
+	}
+	if = {
+		limit = { accou_can_be_better_favored_minister_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:favored_minister }
+	}
+	if = {
+		limit = { accou_can_be_better_court_guru_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:court_guru }
+	}
+	if = {
+		limit = { accou_can_be_better_court_brahmin_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:court_brahmin }
+	}
+	if = {
+		limit = { accou_can_be_better_khlon_glan_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:khlon_glan }
+	}
 	# AGOT
 	if = {
 		limit = { accou_can_be_better_maester_trigger = { LIEGE = $LIEGE$ } }
@@ -535,6 +571,33 @@ accou_get_incumbent_court_position_holder_effect = {
 		flag:keeper_of_the_horses = {
 			court_position:keeper_of_the_horses_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
+		flag:grand_preceptor = {
+			court_position:grand_preceptor_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:grand_mentor = {
+			court_position:grand_mentor_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:grand_guardian = {
+			court_position:grand_guardian_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:fire_dragon_engineer = {
+			court_position:fire_dragon_engineer_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:keeper_of_the_harem = {
+			court_position:keeper_of_the_harem_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:favored_minister = {
+			court_position:favored_minister_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:court_guru = {
+			court_position:court_guru_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:court_brahmin = {
+			court_position:court_brahmin_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:khlon_glan = {
+			court_position:khlon_glan_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
 		# AGOT
 		flag:maester = {
 			court_position:maester_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -834,6 +897,60 @@ accou_appoint_court_position_effect = {
 		flag:keeper_of_the_horses = {
 			appoint_court_position = {
 				court_position = keeper_of_the_horses_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grand_preceptor = {
+			appoint_court_position = {
+				court_position = grand_preceptor_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grand_mentor = {
+			appoint_court_position = {
+				court_position = grand_mentor_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grand_guardian = {
+			appoint_court_position = {
+				court_position = grand_guardian_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:fire_dragon_engineer = {
+			appoint_court_position = {
+				court_position = fire_dragon_engineer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:keeper_of_the_harem = {
+			appoint_court_position = {
+				court_position = keeper_of_the_harem_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:favored_minister = {
+			appoint_court_position = {
+				court_position = favored_minister_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_guru = {
+			appoint_court_position = {
+				court_position = court_guru_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_brahmin = {
+			appoint_court_position = {
+				court_position = court_brahmin_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:khlon_glan = {
+			appoint_court_position = {
+				court_position = khlon_glan_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -1165,6 +1282,60 @@ accou_revoke_court_position_effect = {
 		flag:keeper_of_the_horses = {
 			revoke_court_position = {
 				court_position = keeper_of_the_horses_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grand_preceptor = {
+			revoke_court_position = {
+				court_position = grand_preceptor_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grand_mentor = {
+			revoke_court_position = {
+				court_position = grand_mentor_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grand_guardian = {
+			revoke_court_position = {
+				court_position = grand_guardian_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:fire_dragon_engineer = {
+			revoke_court_position = {
+				court_position = fire_dragon_engineer_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:keeper_of_the_harem = {
+			revoke_court_position = {
+				court_position = keeper_of_the_harem_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:favored_minister = {
+			revoke_court_position = {
+				court_position = favored_minister_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_guru = {
+			revoke_court_position = {
+				court_position = court_guru_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:court_brahmin = {
+			revoke_court_position = {
+				court_position = court_brahmin_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:khlon_glan = {
+			revoke_court_position = {
+				court_position = khlon_glan_court_position
 				recipient = $RECIPIENT$
 			}
 		}

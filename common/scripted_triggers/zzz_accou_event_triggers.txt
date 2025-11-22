@@ -9,7 +9,6 @@
 	trigger_else = {
 		accou_is_available_ai_trigger = yes
 	}
-	is_busy_in_events_localised = yes
 
 	# Health conditions
 	NOT = { has_trait = infirm }

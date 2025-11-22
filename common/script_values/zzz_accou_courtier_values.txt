@@ -211,6 +211,42 @@ accou_court_position_aptitude_value = {
 		limit = { scope:court_position = flag:keeper_of_the_horses }
 		value = aptitude:keeper_of_the_horses_court_position
 	}
+	else_if = {
+		limit = { scope:court_position = flag:grand_preceptor }
+		value = aptitude:grand_preceptor_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:grand_mentor }
+		value = aptitude:grand_mentor_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:grand_guardian }
+		value = aptitude:grand_guardian_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:fire_dragon_engineer }
+		value = aptitude:fire_dragon_engineer_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:keeper_of_the_harem }
+		value = aptitude:keeper_of_the_harem_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:favored_minister }
+		value = aptitude:favored_minister_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_guru }
+		value = aptitude:court_guru_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_brahmin }
+		value = aptitude:court_brahmin_court_position
+	}
+	else_if = {
+		limit = { scope:court_position = flag:khlon_glan }
+		value = aptitude:khlon_glan_court_position
+	}
 	# AGOT
 	else_if = {
 		limit = { scope:court_position = flag:maester }
@@ -433,6 +469,42 @@ accou_court_position_candidate_score_value = {
 	else_if = {
 		limit = { scope:court_position = flag:keeper_of_the_horses }
 		value = accou_keeper_of_the_horses_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:grand_preceptor }
+		value = accou_grand_preceptor_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:grand_mentor }
+		value = accou_grand_mentor_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:grand_guardian }
+		value = accou_grand_guardian_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:fire_dragon_engineer }
+		value = accou_fire_dragon_engineer_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:keeper_of_the_harem }
+		value = accou_keeper_of_the_harem_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:favored_minister }
+		value = accou_favored_minister_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_guru }
+		value = accou_court_guru_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:court_brahmin }
+		value = accou_court_brahmin_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:khlon_glan }
+		value = accou_khlon_glan_candidate_score_value
 	}
 	# AGOT
 	else_if = {

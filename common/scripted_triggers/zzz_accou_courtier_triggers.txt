@@ -164,6 +164,33 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:keeper_of_the_horses = {
 			accou_can_apply_for_keeper_of_the_horses_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:grand_preceptor = {
+			accou_can_apply_for_grand_preceptor_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:grand_mentor = {
+			accou_can_apply_for_grand_mentor_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:grand_guardian = {
+			accou_can_apply_for_grand_guardian_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:fire_dragon_engineer = {
+			accou_can_apply_for_fire_dragon_engineer_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:keeper_of_the_harem = {
+			accou_can_apply_for_keeper_of_the_harem_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:favored_minister = {
+			accou_can_apply_for_favored_minister_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:court_guru = {
+			accou_can_apply_for_court_guru_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:court_brahmin = {
+			accou_can_apply_for_court_brahmin_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:khlon_glan = {
+			accou_can_apply_for_khlon_glan_trigger = { LIEGE = $LIEGE$ }
+		}
 		# AGOT
 		flag:maester = {
 			accou_can_apply_for_maester_trigger = { LIEGE = $LIEGE$ }

@@ -480,6 +480,87 @@ accou_better_court_position_aptitude_modifier = {
 		BASE = $BASE$
 		SCALE = $SCALE$
 	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = grand_preceptor_court_position
+		NAME = grand_preceptor
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = grand_mentor_court_position
+		NAME = grand_mentor
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = grand_guardian_court_position
+		NAME = grand_guardian
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = fire_dragon_engineer_court_position
+		NAME = fire_dragon_engineer
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = keeper_of_the_harem_court_position
+		NAME = keeper_of_the_harem
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = favored_minister_court_position
+		NAME = favored_minister
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_guru_court_position
+		NAME = court_guru
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = court_brahmin_court_position
+		NAME = court_brahmin
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
+		TYPE = khlon_glan_court_position
+		NAME = khlon_glan
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
 	# AGOT
 	accou_better_court_position_aptitude_internal_modifier = {
 		CHARACTER = $CHARACTER$

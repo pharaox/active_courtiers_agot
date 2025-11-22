@@ -2,6 +2,7 @@
 	# valid_character
 	exists = $COURT_OWNER$
 	can_be_chancellor_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	tgp_is_ceremonial_liege_trigger = no
 	#AGOT Added
 	NOT = { has_character_flag = nw_ranger_title }
 }
@@ -10,6 +11,7 @@ accou_can_be_steward_trigger = {
 	# valid_character
 	exists = $COURT_OWNER$
 	can_be_steward_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	tgp_is_ceremonial_liege_trigger = no
 	#AGOT Added
 	NOT = { has_character_flag = nw_ranger_title }
 }
@@ -17,6 +19,7 @@ accou_can_be_steward_trigger = {
 accou_can_be_marshal_trigger = {
 	exists = $COURT_OWNER$
 	can_be_marshal_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	tgp_is_ceremonial_liege_trigger = no
 	#AGOT Disabled
 	#NOT = { this = character:528 }
 	#AGOT Added
@@ -55,6 +58,37 @@ accou_can_be_spymaster_trigger = {
 	# valid_character
 	exists = $COURT_OWNER$
 	can_be_spymaster_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	trigger_if = {
+		limit = {
+			$COURT_OWNER$ = {
+				is_landed = yes
+				government_has_flag = government_has_merit
+			}
+		}
+		trigger_if = {
+			limit = {
+				$COURT_OWNER$ = {
+					OR = {
+						has_realm_law = male_only_law
+						has_realm_law = male_preference_law
+					}
+				}
+			}
+			is_male = yes
+		}
+		trigger_if = {
+			limit = {
+				$COURT_OWNER$ = {
+					OR = {
+						has_realm_law = female_only_law
+						has_realm_law = female_preference_law
+					}
+				}
+			}
+			is_female = yes
+		}
+	}
+	tgp_is_ceremonial_liege_trigger = no
 	#AGOT Added
 	NOT = { has_character_flag = nw_ranger_title }
 }
@@ -63,6 +97,7 @@ accou_can_be_court_chaplain_trigger = {
 	# valid_character
 	exists = $COURT_OWNER$
 	can_be_court_chaplain_trigger = { COURT_OWNER = $COURT_OWNER$ }
+	tgp_is_ceremonial_liege_trigger = no
 }
 
 accou_can_be_kurultai_trigger = {

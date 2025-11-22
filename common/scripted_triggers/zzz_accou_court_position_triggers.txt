@@ -22,3 +22,13 @@ accou_can_be_court_astrologer_trigger = {
 		$LIEGE$.domicile.domicile_culture ?= culture
 	}
 }
+
+accou_can_be_court_guru_trigger = {
+	always = no
+	exists = $LIEGE$
+}
+
+accou_can_be_court_brahmin_trigger = {
+	always = no
+	exists = $LIEGE$
+}
