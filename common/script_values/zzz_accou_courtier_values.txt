@@ -257,6 +257,10 @@ accou_court_position_aptitude_value = {
 		value = aptitude:household_guard_court_position
 	}
 	else_if = {
+		limit = { scope:court_position = flag:admiral_court }
+		value = aptitude:admiral_court_position
+	}
+	else_if = {
 		limit = { scope:court_position = flag:septon }
 		value = aptitude:septon_court_position
 	}
@@ -514,6 +518,10 @@ accou_court_position_candidate_score_value = {
 	else_if = {
 		limit = { scope:court_position = flag:household_guard }
 		value = accou_household_guard_candidate_score_value
+	}
+	else_if = {
+		limit = { scope:court_position = flag:admiral_court }
+		value = aptitude:admiral_court_position
 	}
 	else_if = {
 		limit = { scope:court_position = flag:septon }

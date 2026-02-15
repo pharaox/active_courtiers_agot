@@ -6,6 +6,10 @@ accou_household_guard_candidate_score_value = {
 	value = 100
 }
 
+accou_admiral_court_candidate_score_value = {
+	value = 100
+}
+
 accou_septon_candidate_score_value = {
 	value = 50
 

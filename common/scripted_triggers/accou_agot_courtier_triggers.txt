@@ -44,6 +44,14 @@ accou_can_be_better_household_guard_trigger = {
 	}
 }
 
+accou_can_be_better_admiral_court_trigger = {
+	accou_can_be_better_court_position_trigger = {
+		TYPE = admiral_court_position
+		NAME = admiral_court
+		LIEGE = $LIEGE$
+	}
+}
+
 accou_can_be_better_septon_trigger = {
 	accou_can_be_better_court_position_trigger = {
 		TYPE = septon_court_position
@@ -156,6 +164,13 @@ accou_can_apply_for_maester_trigger = {
 accou_can_apply_for_household_guard_trigger = {
 	accou_can_apply_for_court_position_trigger = {
 		TYPE = household_guard_court_position
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_apply_for_admiral_court_trigger = {
+	accou_can_apply_for_court_position_trigger = {
+		TYPE = admiral_court_position
 		LIEGE = $LIEGE$
 	}
 }

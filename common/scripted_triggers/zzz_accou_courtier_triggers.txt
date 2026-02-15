@@ -198,6 +198,9 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:household_guard = {
 			accou_can_apply_for_household_guard_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:admiral_court = {
+			accou_can_apply_for_admiral_court_trigger = { LIEGE = $LIEGE$ }
+		}
 		flag:septon = {
 			accou_can_apply_for_septon_trigger = { LIEGE = $LIEGE$ }
 		}

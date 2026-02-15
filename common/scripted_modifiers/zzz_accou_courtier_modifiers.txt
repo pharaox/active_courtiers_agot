@@ -584,6 +584,15 @@ accou_better_court_position_aptitude_modifier = {
 		CHARACTER = $CHARACTER$
 		COURT_POSITION = $COURT_POSITION$
 		INCUMBENT = $INCUMBENT$
+		TYPE = admiral_court_position
+		NAME = admiral_court
+		BASE = $BASE$
+		SCALE = $SCALE$
+	}
+	accou_better_court_position_aptitude_internal_modifier = {
+		CHARACTER = $CHARACTER$
+		COURT_POSITION = $COURT_POSITION$
+		INCUMBENT = $INCUMBENT$
 		TYPE = septon_court_position
 		NAME = septon
 		BASE = $BASE$

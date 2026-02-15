@@ -11,7 +11,7 @@
 	trigger_if = {
 		limit = {
 			$LIEGE$ = {
-				has_title = title:e_the_iron_throne
+				has_title = title:h_the_iron_throne
 			}
 		}
 		has_inactive_trait = grandmaester
@@ -19,6 +19,11 @@
 }
 
 accou_can_be_household_guard_trigger = {
+	is_capable_adult = yes
+	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
+}
+
+accou_can_be_admiral_court_trigger = {
 	is_capable_adult = yes
 	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
 }

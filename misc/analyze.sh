@@ -110,6 +110,7 @@ echo "- foreign_emissary: $(grep -a "accou_courtier.0003 event option a, .*, pos
 echo "- keeper_of_the_horses: $(grep -a "accou_courtier.0003 event option a, .*, position: keeper_of_the_horses" debug.log | wc -l)"
 echo "- maester: $(grep -a "accou_courtier.0003 event option a, .*, position: maester" debug.log | wc -l)"
 echo "- household_guard: $(grep -a "accou_courtier.0003 event option a, .*, position: household_guard" debug.log | wc -l)"
+echo "- admiral_court: $(grep -a "accou_courtier.0003 event option a, .*, position: admiral_court" debug.log | wc -l)"
 echo "- septon: $(grep -a "accou_courtier.0003 event option a, .*, position: septon" debug.log | wc -l)"
 echo "- septa: $(grep -a "accou_courtier.0003 event option a, .*, position: septa" debug.log | wc -l)"
 echo "- gaoler: $(grep -a "accou_courtier.0003 event option a, .*, position: gaoler" debug.log | wc -l)"

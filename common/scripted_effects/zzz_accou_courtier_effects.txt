@@ -259,6 +259,10 @@ accou_get_better_court_position_options_effect = {
 		add_to_variable_list = { name = $OPTIONS$ target = flag:household_guard }
 	}
 	if = {
+		limit = { accou_can_be_better_admiral_court_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:admiral_court }
+	}
+	if = {
 		limit = { accou_can_be_better_septon_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:septon }
 	}
@@ -604,6 +608,9 @@ accou_get_incumbent_court_position_holder_effect = {
 		}
 		flag:household_guard = {
 			court_position:household_guard_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:admiral_court = {
+			court_position:admiral_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
 		flag:septon = {
 			court_position:septon_court_position ?= { save_scope_as = $INCUMBENT$ }
@@ -964,6 +971,12 @@ accou_appoint_court_position_effect = {
 		flag:household_guard = {
 			appoint_court_position = {
 				court_position = household_guard_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:admiral_court = {
+			appoint_court_position = {
+				court_position = admiral_court_position
 				recipient = $RECIPIENT$
 			}
 		}
@@ -1349,6 +1362,12 @@ accou_revoke_court_position_effect = {
 		flag:household_guard = {
 			revoke_court_position = {
 				court_position = household_guard_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:admiral_court = {
+			revoke_court_position = {
+				court_position = admiral_court_position
 				recipient = $RECIPIENT$
 			}
 		}
