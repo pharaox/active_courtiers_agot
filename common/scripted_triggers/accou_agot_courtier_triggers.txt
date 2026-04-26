@@ -124,6 +124,22 @@ accou_can_be_better_first_sword_trigger = {
 	}
 }
 
+accou_can_be_better_grey_cloaks_commander_trigger = {
+	accou_can_be_better_court_position_trigger = {
+		TYPE = grey_cloaks_commander_court_position
+		NAME = grey_cloaks_commander
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_be_better_crimson_cloaks_commander_trigger = {
+	accou_can_be_better_court_position_trigger = {
+		TYPE = crimson_cloaks_commander_court_position
+		NAME = crimson_cloaks_commander
+		LIEGE = $LIEGE$
+	}
+}
+
 accou_can_apply_for_personal_steward_trigger = {
 	accou_can_apply_for_councillor_trigger = {
 		TYPE = councillor_personal_steward
@@ -234,6 +250,20 @@ accou_can_apply_for_bloodrider_trigger = {
 accou_can_apply_for_first_sword_trigger = {
 	accou_can_apply_for_court_position_trigger = {
 		TYPE = first_sword_court_position
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_apply_for_grey_cloaks_commander_trigger = {
+	accou_can_apply_for_court_position_trigger = {
+		TYPE = grey_cloaks_commander_court_position
+		LIEGE = $LIEGE$
+	}
+}
+
+accou_can_apply_for_crimson_cloaks_commander_trigger = {
+	accou_can_apply_for_court_position_trigger = {
+		TYPE = crimson_cloaks_commander_court_position
 		LIEGE = $LIEGE$
 	}
 }

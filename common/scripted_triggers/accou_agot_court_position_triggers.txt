@@ -94,3 +94,13 @@ accou_can_be_first_sword_trigger = {
 	is_capable_adult = yes
 	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
 }
+
+accou_can_be_grey_cloaks_commander_trigger = {
+	is_capable_adult = yes
+	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
+}
+
+accou_can_be_crimson_cloaks_commander_trigger = {
+	is_capable_adult = yes
+	can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $LIEGE$ }
+}

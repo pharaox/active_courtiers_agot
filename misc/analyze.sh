@@ -120,6 +120,8 @@ echo "- court_smith: $(grep -a "accou_courtier.0003 event option a, .*, position
 echo "- head_dragonkeeper: $(grep -a "accou_courtier.0003 event option a, .*, position: head_dragonkeeper" debug.log | wc -l)"
 echo "- bloodrider: $(grep -a "accou_courtier.0003 event option a, .*, position: bloodrider" debug.log | wc -l)"
 echo "- first_sword: $(grep -a "accou_courtier.0003 event option a, .*, position: first_sword" debug.log | wc -l)"
+echo "- grey_cloaks_commander: $(grep -a "accou_courtier.0003 event option a, .*, position: grey_cloaks_commander" debug.log | wc -l)"
+echo "- crimson_cloaks_commander: $(grep -a "accou_courtier.0003 event option a, .*, position: crimson_cloaks_commander" debug.log | wc -l)"
 echo "---"
 echo "accou_courtier.0003 event option b: $(grep -a "accou_courtier.0003 event option b" debug.log | wc -l)"
 echo

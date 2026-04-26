@@ -228,5 +228,11 @@ accou_can_apply_for_court_position_option_trigger = {
 		flag:first_sword = {
 			accou_can_apply_for_first_sword_trigger = { LIEGE = $LIEGE$ }
 		}
+		flag:grey_cloaks_commander = {
+			accou_can_apply_for_grey_cloaks_commander_trigger = { LIEGE = $LIEGE$ }
+		}
+		flag:crimson_cloaks_commander = {
+			accou_can_apply_for_crimson_cloaks_commander_trigger = { LIEGE = $LIEGE$ }
+		}
 	}
 }

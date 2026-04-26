@@ -97,3 +97,11 @@ accou_bloodrider_candidate_score_value = {
 accou_first_sword_candidate_score_value = {
 	value = 50
 }
+
+accou_grey_cloaks_commander_candidate_score_value = {
+	value = 50
+}
+
+accou_crimson_cloaks_commander_candidate_score_value = {
+	value = 50
+}

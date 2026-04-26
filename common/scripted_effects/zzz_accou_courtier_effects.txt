@@ -298,6 +298,14 @@ accou_get_better_court_position_options_effect = {
 		limit = { accou_can_be_better_first_sword_trigger = { LIEGE = $LIEGE$ } }
 		add_to_variable_list = { name = $OPTIONS$ target = flag:first_sword }
 	}
+	if = {
+		limit = { accou_can_be_better_grey_cloaks_commander_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:grey_cloaks_commander }
+	}
+	if = {
+		limit = { accou_can_be_better_crimson_cloaks_commander_trigger = { LIEGE = $LIEGE$ } }
+		add_to_variable_list = { name = $OPTIONS$ target = flag:crimson_cloaks_commander }
+	}
 }
 
 accou_get_incumbent_councillor_effect = {
@@ -642,6 +650,12 @@ accou_get_incumbent_court_position_holder_effect = {
 		}
 		flag:first_sword = {
 			court_position:first_sword_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:grey_cloaks_commander = {
+			court_position:grey_cloaks_commander_court_position ?= { save_scope_as = $INCUMBENT$ }
+		}
+		flag:crimson_cloaks_commander = {
+			court_position:crimson_cloaks_commander_court_position ?= { save_scope_as = $INCUMBENT$ }
 		}
 	}
 }
@@ -1034,6 +1048,18 @@ accou_appoint_court_position_effect = {
 				recipient = $RECIPIENT$
 			}
 		}
+		flag:grey_cloaks_commander = {
+			appoint_court_position = {
+				court_position = grey_cloaks_commander_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:crimson_cloaks_commander = {
+			appoint_court_position = {
+				court_position = crimson_cloaks_commander_court_position
+				recipient = $RECIPIENT$
+			}
+		}
 	}
 }
 
@@ -1422,6 +1448,18 @@ accou_revoke_court_position_effect = {
 		flag:first_sword = {
 			revoke_court_position = {
 				court_position = first_sword_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:grey_cloaks_commander = {
+			revoke_court_position = {
+				court_position = grey_cloaks_commander_court_position
+				recipient = $RECIPIENT$
+			}
+		}
+		flag:crimson_cloaks_commander = {
+			revoke_court_position = {
+				court_position = crimson_cloaks_commander_court_position
 				recipient = $RECIPIENT$
 			}
 		}
