@@ -1,0 +1,115 @@
+CK3: 1.19.0.6, AGOT: 0.5.2.1, main: 0.12.0, compatch: 0.12.0
+Start date: 106 A.C., truncated to 24th Third Moon, 112 A.C.
+
+accou_marriage.0001 event option a: 3220
+- success: 644
+- failure: 2576
+- failure fp: 173
+
+accou_marriage.0002 event option a: 433
+- outsider: 213
+- insider: 220
+accou_marriage.0002 event option b: 211
+- outsider: 12
+- insider: 199
+average marriage candidate quality: 30,8241
+
+accou_invite.0001 event option a: 1514
+- success: 283
+- failure: 1231
+- failure fp: 0
+
+accou_invite.0002 event option a: 271
+accou_invite.0002 event option b: 12
+average invite candidate quality: 38,1131
+
+accou_guardian.0001 event option a: 527
+- success: 524
+- failure: 3
+- failure fp: 0
+
+accou_guardian.0002 event option a: 492
+- education focus: 41
+accou_guardian.0002 event option b: 32
+average guardian candidate quality: 24,2519
+
+accou_courtier.0001 event option a: 115
+- success: 114
+- failure: 1
+
+accou_courtier.0002 event option a: 189
+- success: 188
+- failure: 1
+
+accou_courtier.0003 event option a: 277
+---
+- chancellor: 19
+- marshal: 15
+- steward: 21
+- spymaster: 22
+- court_chaplain: 6
+- kurultai: 0
+- personal_steward: 0
+- admiral: 0
+- castellan: 0
+---
+- court_physician: 0
+- charioteer: 0
+- bookmaker: 0
+- akolouthos: 0
+- cultural_emissary: 0
+- keeper_of_swans: 0
+- chief_qadi: 0
+- garuda: 0
+- court_gardener: 1
+- lady_in_waiting: 33
+- antiquarian: 1
+- travel_leader: 27
+- wet_nurse: 2
+- court_tutor: 12
+- food_taster: 0
+- master_of_horse: 1
+- master_of_hunt: 2
+- royal_architect: 0
+- high_almoner: 0
+- seneschal: 11
+- cupbearer: 2
+- chief_eunuch: 0
+- court_jester: 8
+- court_poet: 0
+- court_musician: 1
+- bodyguard: 0
+- champion: 3
+- executioner: 0
+- court_artificer: 0
+- cave_hermit: 0
+- master_assassin: 0
+- court_scholar: 0
+- chronicler: 3
+- court_brewmaster: 1
+- eparch: 0
+- court_astrologer: 0
+- boyan: 0
+- siege_engineer: 0
+- yurtchi: 0
+- cherbi: 0
+- yeke_jarquchi: 0
+- foreign_emissary: 0
+- keeper_of_the_horses: 0
+- maester: 0
+- household_guard: 28
+- admiral_court: 0
+- septon: 0
+- septa: 0
+- gaoler: 0
+- harbormaster: 0
+- master_at_arms: 7
+- court_smith: 29
+- head_dragonkeeper: 0
+- bloodrider: 0
+- first_sword: 0
+- grey_cloaks_commander: 0
+- crimson_cloaks_commander: 0
+---
+accou_courtier.0003 event option b: 25
+
